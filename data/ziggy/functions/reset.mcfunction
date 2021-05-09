@@ -1,1 +1,1 @@
-scoreboard players set @e red_bd 0
+scoreboard players set @e[type=armor_stand] bd 0
