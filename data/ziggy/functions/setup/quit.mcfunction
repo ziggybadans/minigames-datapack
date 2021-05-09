@@ -3,7 +3,6 @@ tellraw @s {"text": "Removing datapack...", "color": "dark_red", "bold": true}
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing settings variables", "italic": true}
 scoreboard objectives remove settings
 scoreboard players reset debugging
-scoreboard players reset installed
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Setting installed boolean to false", "italic": true}
 scoreboard players set installed setup 0
