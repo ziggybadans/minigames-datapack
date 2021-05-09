@@ -1,0 +1,1 @@
+scoreboard players set @e red_bd 0
