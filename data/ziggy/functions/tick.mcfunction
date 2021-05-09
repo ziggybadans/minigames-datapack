@@ -1,3 +1,4 @@
-# Temporarily sets the 'red bed destroyed' value to true (1)
-execute if block 0 65 0 air if score @e[type=armor_stand,team=red,limit=1] red_bd matches 0 run scoreboard players set @e[team=red] red_bd 1
-execute if entity @e[scores={red_bd=1}] run function ziggy:red_bd
+execute if block 1 65 0 air if score @e[type=armor_stand,team=red,limit=1] bd matches 0 run function ziggy:bed_d/red_bd
+execute if block -4 65 5 air if score @e[type=armor_stand,team=yellow,limit=1] bd matches 0 run function ziggy:bed_d/yellow_bd
+execute if block -4 65 -5 air if score @e[type=armor_stand,team=green,limit=1] bd matches 0 run function ziggy:bed_d/green_bd
+execute if block -9 65 0 air if score @e[type=armor_stand,team=blue,limit=1] bd matches 0 run function ziggy:bed_d/blue_bd
