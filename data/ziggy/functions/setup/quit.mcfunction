@@ -21,6 +21,16 @@ team remove yellow
 team remove green
 team remove blue
 
+execute if score debugging settings matches 1 run tellraw @s {"text": "Removing beds", "italic": true}
+setblock -1 65 0 air replace
+setblock 0 65 0 air replace
+setblock -6 65 -5 air replace
+setblock -6 65 -6 air replace
+setblock -11 65 0 air replace
+setblock -12 65 0 air replace
+setblock -6 65 5 air replace
+setblock -6 65 6 air replace
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing installation tracker", "italic": true}
 scoreboard objectives remove setup
 scoreboard players reset installed
