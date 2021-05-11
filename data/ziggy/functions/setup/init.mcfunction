@@ -5,6 +5,9 @@ execute if score debugging settings matches 1 run tellraw @s {"text": "Adding in
 scoreboard objectives add setup dummy
 scoreboard players set installed setup 0
 
+scoreboard objectives add game dummy
+scoreboard players set active game 0
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding bed tracker", "italic": true}
 # Adds bed and death trackers
 scoreboard objectives add bd dummy "Bed Destroyed"

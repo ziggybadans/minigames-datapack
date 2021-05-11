@@ -8,6 +8,8 @@ scoreboard players set blue_bed bd 0
 
 scoreboard players set @a bd 0
 
+scoreboard players set active game 0
+
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting death tracker", "italic": true}
 scoreboard players reset * dead
 scoreboard players set iron_summoner timer 1
