@@ -1,0 +1,1 @@
+give @s strider_spawn_egg{display:{Name:'{"text":"Pop-up Tower"}'},EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Tags:["tower", "red"],Team:"red"}} 1
