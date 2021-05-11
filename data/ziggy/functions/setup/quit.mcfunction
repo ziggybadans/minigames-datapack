@@ -15,6 +15,12 @@ scoreboard players reset yellow_bed
 scoreboard players reset green_bed
 scoreboard players reset blue_bed
 
+scoreboard players reset * timer
+scoreboard objectives remove timer
+scoreboard players reset * stage_away
+scoreboard objectives remove stage_away 
+scoreboard players reset * stage_home
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing teams", "italic": true}
 team remove red
 team remove yellow

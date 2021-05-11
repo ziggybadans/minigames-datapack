@@ -10,6 +10,16 @@ scoreboard players set @a bd 0
 
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting death tracker", "italic": true}
 scoreboard players reset * dead
+scoreboard players set iron_summoner timer 1
+scoreboard players set gold_summoner timer 1
+scoreboard players set diamond_summoner timer -1
+scoreboard players set emerald_summoner timer -1
+scoreboard players set iron_summoner stage_home 0
+scoreboard players set gold_summoner stage_home 0
+scoreboard players set diamond_summoner stage_home -1
+scoreboard players set emerald_summoner stage_home -1
+scoreboard players set diamond_summoner stage_away -1
+scoreboard players set emerald_summoner stage_away -1
 
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting teams", "italic": true}
 team leave @a[team=!]
