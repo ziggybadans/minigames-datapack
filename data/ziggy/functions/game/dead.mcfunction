@@ -1,2 +1,2 @@
 gamemode spectator @s
-scoreboard players set @s dead 0
+scoreboard players set @s dead 1
