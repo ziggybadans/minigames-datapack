@@ -10,4 +10,5 @@
 ## Bedwars
 
 * [Introduction](bedwars/introduction.md)
+* [The Game](bedwars/the-game.md)
 
