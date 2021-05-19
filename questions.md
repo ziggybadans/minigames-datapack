@@ -18,9 +18,3 @@ There is even a whole section on editing the code that we have included in this 
 
 {% page-ref page="editing-the-pack.md" %}
 
-## Have you had a chance to answer the previous question?
-
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
-
-
-

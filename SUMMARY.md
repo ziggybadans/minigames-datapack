@@ -6,3 +6,7 @@
 * [Troubleshooting](troubleshooting.md)
 * [Editing the pack](editing-the-pack.md)
 
+## Bedwars
+
+* [Introduction](bedwars/introduction.md)
+
