@@ -1,2 +1,2 @@
-# minigames-datapack
-A datapack enabling various minigames on vanilla Minecraft.
+# Initial page
+
