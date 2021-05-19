@@ -55,7 +55,7 @@ _Fabric can safely use /reload, although if the FabricProxyLite mod is installed
 You can find out more about why you shouldn't use /reload on these servers [here.](https://madelinemiller.dev/blog/problem-with-reload/)
 {% endhint %}
 
-In some cases, the datapack may still be disabled. If this happens to you, type /datapack list. If it is disabled, it will show in red. Type /datapack enable minigames-datapack to fix this.
+In some cases, the datapack may still be disabled. If this happens to you, type `/datapack list`. If it is disabled, it will show in red. Type `/datapack enable minigames-datapack` to fix this.
 
 If the file name isn't listed, or you are having more issues:
 
