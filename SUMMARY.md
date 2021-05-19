@@ -1,4 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Welcome](README.md)
+* [Questions](questions.md)
+* [Installation](installation.md)
+* [Troubleshooting](troubleshooting.md)
+* [Editing the pack](editing-the-pack.md)
 
