@@ -1,0 +1,1 @@
+execute at @e[type=item_frame, tag=center] run worldborder center ~ ~

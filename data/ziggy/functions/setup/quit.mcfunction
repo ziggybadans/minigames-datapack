@@ -7,6 +7,8 @@ scoreboard players reset debugging
 execute if score debugging settings matches 1 run tellraw @s {"text": "Setting installed boolean to false", "italic": true}
 scoreboard players set installed setup 0
 
+scoreboard objectives remove arena_setup
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing bed and death trackers", "italic": true}
 scoreboard objectives remove bd
 scoreboard objectives remove dead

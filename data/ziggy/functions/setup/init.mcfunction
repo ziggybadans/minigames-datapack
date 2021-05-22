@@ -8,6 +8,14 @@ scoreboard players set installed setup 0
 scoreboard objectives add game dummy
 scoreboard players set active game 0
 
+scoreboard objectives add arena_setup dummy
+##Set this to -1 once arena setup run command is done
+scoreboard players set coords arena_setup 0
+#scoreboard players set radius_detection arena_setup 10
+#scoreboard players set radius_detection_threshold arena_setup 3
+#scoreboard players set tries arena_setup 0
+scoreboard players set bed_setup arena_setup 2
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding bed tracker", "italic": true}
 # Adds bed and death trackers
 scoreboard objectives add bd dummy "Bed Destroyed"
