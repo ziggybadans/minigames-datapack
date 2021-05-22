@@ -1,7 +1,3 @@
----
-description: An overview of the pack and documentation.
----
-
 # Welcome
 
 Glass is a minigames datapack, currently featuring **one** minigame. It is fully transparent, vanilla, optimised and customisable.
@@ -15,6 +11,8 @@ Glass is a minigames datapack, currently featuring **one** minigame. It is fully
 * Support for my Void Datapack!
 
 ## Minigames
+* Bedwars
+(More to come soon!)
 
 
 
