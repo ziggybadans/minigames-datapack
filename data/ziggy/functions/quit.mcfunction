@@ -7,6 +7,8 @@ scoreboard players reset debugging
 execute if score debugging settings matches 1 run tellraw @s {"text": "Setting installed boolean to false", "italic": true}
 scoreboard players set installed setup 0
 
+scoreboard objectives remove game
+
 scoreboard objectives remove arena_setup
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing bed and death trackers", "italic": true}
@@ -38,6 +40,15 @@ setblock -11 65 0 air replace
 setblock -12 65 0 air replace
 setblock -6 65 5 air replace
 setblock -6 65 6 air replace
+
+
+
+scoreboard objectives remove hs_block
+
+team remove hiders
+team remove seekers
+
+
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing installation tracker", "italic": true}
 scoreboard objectives remove setup

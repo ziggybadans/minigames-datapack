@@ -6,7 +6,8 @@ scoreboard objectives add setup dummy
 scoreboard players set installed setup 0
 
 scoreboard objectives add game dummy
-scoreboard players set active game 0
+scoreboard players set bedwars game 0
+scoreboard players set hide_seek game 0
 
 scoreboard objectives add arena_setup dummy
 ##Set this to -1 once arena setup run command is done
@@ -69,6 +70,25 @@ execute store success score bedsplaced setup run setblock 0 65 0 red_bed[part=he
 execute if score debugging settings matches 1 if score bedsplaced setup matches 1 run tellraw @s {"text": "Placing beds...", "italic": true}
 execute if score bedsplaced setup matches 1 run function ziggy:run/reset
 execute if score debugging settings matches 1 if score bedsplaced setup matches 0 run tellraw @s {"text": "Beds are already placed!", "italic": true}
+
+
+
+scoreboard objectives add hs_block dummy
+scoreboard players set @a hs_block -1
+
+team add hiders "Hiders"
+team add seekers "Seekers"
+team modify hiders color green
+team modify hiders collisionRule always
+team modify hiders friendlyFire false
+team modify hiders nametagVisibility always
+team modify hiders prefix {"text": "[Hider]","color": "grey","bold": true}
+team modify seekers color red
+team modify seekers collisionRule pushOtherTeams
+team modify seekers friendlyFire false
+team modify seekers nametagVisibility hideForOtherTeams
+team modify seekers prefix {"text": "[Seeker]","color": "grey","bold": true}
+
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Setting 'installed' to true", "italic": true}
 #Sets installed to true
