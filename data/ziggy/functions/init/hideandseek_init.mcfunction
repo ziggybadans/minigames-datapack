@@ -24,3 +24,7 @@ scoreboard objectives add sneaking_timer dummy
 scoreboard objectives add camoflauged dummy
 
 scoreboard objectives add walk minecraft.custom:walk_one_cm
+scoreboard players set moving walk 1
+
+scoreboard players set shulkerhealth health_constants 30
+scoreboard players set playerhealth health_constants 20

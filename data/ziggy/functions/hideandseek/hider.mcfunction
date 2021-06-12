@@ -53,18 +53,36 @@ execute if entity @a[team=seekers, distance=..15] run function ziggy:hideandseek
 execute unless predicate ziggy:is_sneaking run scoreboard players reset @s sneaking_timer
 execute if predicate ziggy:is_sneaking unless score @s camoflauged matches 1 run scoreboard players add @s sneaking_timer 1
 
-execute if score @s sneaking_timer >= 5 sneaking_timer run title @s actionbar {"text":"\u2b1b \u0020 \u0020 \u0020 \u0020 \u2b1b","color":"dark_red"}
-execute if score @s sneaking_timer >= 35 sneaking_timer run title @s actionbar {"text":"\u2b1b \u2b1b \u0020 \u0020 \u2b1b \u2b1b","color":"dark_red"}
-execute if score @s sneaking_timer >= 65 sneaking_timer run title @s actionbar {"text":"\u2b1b \u2b1b \u2b1b \u2b1b \u2b1b \u2b1b","color":"dark_red"}
+execute if score @s sneaking_timer matches 5 run title @s actionbar {"text":"\u2b1b \u0020 \u0020 \u0020 \u0020 \u2b1b","color":"dark_red"}
+execute if score @s sneaking_timer matches 35 run title @s actionbar {"text":"\u2b1b \u2b1b \u0020 \u0020 \u2b1b \u2b1b","color":"dark_red"}
+execute if score @s sneaking_timer matches 65 run title @s actionbar {"text":"\u2b1b \u2b1b \u2b1b \u2b1b \u2b1b \u2b1b","color":"dark_red"}
 
 
-execute if score @s sneaking_timer matches 100 unless score @s camoflauged matches 1 at @s run function ziggy:hideandseek/camoflauge
-execute if score @s camoflauged matches 1 if score @s hs_block matches 1 at @s anchored eyes align xyz run summon falling_block ~0.5 ~ ~0.5 {NoGravity:true,Time:1}
+execute if score @s sneaking_timer matches 100 unless score @s camoflauged matches 1 at @s as @s run function ziggy:hideandseek/camoflauge
+execute if score @s camoflauged matches 1 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 4 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=4},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 5 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=5},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 6 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=6},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 7 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=7},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 8 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=8},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 9 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=9},limit=1] {Time:1}
 
 # Uncamoflauge
-execute if score @e[type=shulker,scores={playerID=1},limit=1] health <= 29 health run scoreboard players set @s camoflauged 0
-execute if score @s[scores={playerID=1}] health <= 19 health run scoreboard players set @s camoflauged 0
+#execute if score @s camoflauged matches 1 if score @e[type=shulker,scores={playerID=1},limit=1] health < shulkerhealth health_constants run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 1 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=1},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 2 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=2},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 3 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=3},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 4 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=4},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 5 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=5},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 6 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=6},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 7 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=7},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 8 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=8},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
+execute if score @s camoflauged matches 1 if score @s playerID matches 9 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=9},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 2
 
-execute if score @s walk >= 1 walk run scoreboard players set @s camoflauged 0
+execute if score @s camoflauged matches 1 if data entity @s {HurtTime:10s} run scoreboard players set @s camoflauged 2
 
-execute if score @s camoflauged matches 0 run function ziggy:hideandseek/uncamoflauge
+execute if score @s camoflauged matches 1 if score @s walk >= moving walk run scoreboard players set @s camoflauged 2
+
+execute if score @s camoflauged matches 2 run function ziggy:hideandseek/uncamoflauge

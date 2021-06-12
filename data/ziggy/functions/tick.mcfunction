@@ -19,3 +19,6 @@ execute as @a[team=seekers] at @s if score hide_seek game matches 1 run function
 
 execute as @a[scores={walk=1..},limit=1] if data entity @s {OnGround:1b} run scoreboard players remove @s walk 1
 scoreboard players set @a[scores={walk=1..}] walk 1
+
+#all
+execute as @e unless score @s playerID >= #base playerID run scoreboard players operation @s playerID = #base playerID

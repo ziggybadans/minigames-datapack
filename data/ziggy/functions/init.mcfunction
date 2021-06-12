@@ -14,8 +14,10 @@ scoreboard objectives add timer dummy
 
 scoreboard objectives add playerID dummy
 scoreboard players set nextID playerID 1
+scoreboard players set #base playerID 0
 
 scoreboard objectives add health health "Health"
+scoreboard objectives add health_constants dummy
 
 tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
 function ziggy:init/bedwars_init
