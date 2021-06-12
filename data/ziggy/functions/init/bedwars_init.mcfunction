@@ -19,7 +19,6 @@ scoreboard players add blue_bed bd 0
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding timer", "italic": true}
 #Adds timer
-scoreboard objectives add timer dummy
 scoreboard players set iron_summoner timer 1
 scoreboard players set gold_summoner timer 1
 scoreboard players set diamond_summoner timer -1

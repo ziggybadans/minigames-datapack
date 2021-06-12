@@ -15,3 +15,12 @@ team modify seekers collisionRule pushOtherTeams
 team modify seekers friendlyFire false
 team modify seekers nametagVisibility hideForOtherTeams
 team modify seekers prefix {"text": "[Seeker]","color": "grey","bold": true}
+
+execute if score debugging settings matches 1 run tellraw @s {"text": "Adding timers", "italic": true}
+scoreboard players set hider_warning timer 0
+scoreboard objectives add hide_seek_timer dummy
+scoreboard objectives add sneaking_timer dummy
+
+scoreboard objectives add camoflauged dummy
+
+scoreboard objectives add walk minecraft.custom:walk_one_cm

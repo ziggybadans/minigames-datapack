@@ -13,8 +13,6 @@ scoreboard players reset * dead
 scoreboard objectives remove dead
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing timers and summoner trackers", "italic": true}
-scoreboard players reset * timer
-scoreboard objectives remove timer
 scoreboard players reset * stage_home
 scoreboard objectives remove stage_home
 scoreboard players reset * stage_away

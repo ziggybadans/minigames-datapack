@@ -11,6 +11,11 @@ execute as @a at @s if entity @s[y=-30,dy=15] run function ziggy:bedwars/tools/t
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
 #hideandseek
+execute if score hide_seek game matches 1 run scoreboard players add hider_warning timer 1
+execute if score hider_warning timer matches 45 run scoreboard players set hider_warning timer 0
 execute as @a[team=hiders] at @s anchored feet if score hide_seek game matches 1 run function ziggy:hideandseek/hider
-execute as @a[team=seekers] at @s anchored feet if score hide_seek game matches 1 run function ziggy:hideandseek/seeker
+execute as @a[team=seekers] at @s if score hide_seek game matches 1 run function ziggy:hideandseek/seeker
 #hide_seek -> game: 0 = not playing, 1 = in game
+
+execute as @a[scores={walk=1..},limit=1] if data entity @s {OnGround:1b} run scoreboard players remove @s walk 1
+scoreboard players set @a[scores={walk=1..}] walk 1
