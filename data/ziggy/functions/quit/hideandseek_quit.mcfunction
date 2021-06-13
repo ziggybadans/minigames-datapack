@@ -21,3 +21,6 @@ scoreboard objectives remove walk
 bossbar remove camoflauge_time
 
 scoreboard objectives remove camo_cooldown
+
+effect clear @a
+clear @a
