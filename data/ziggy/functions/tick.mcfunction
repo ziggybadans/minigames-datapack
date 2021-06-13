@@ -22,3 +22,21 @@ scoreboard players set @a[scores={walk=1..}] walk 1
 
 #all
 execute as @e unless score @s playerID >= #base playerID run scoreboard players operation @s playerID = #base playerID
+
+scoreboard players add position timer 1
+execute if score position timer matches 6 run scoreboard players set position timer 0
+
+execute if score position timer matches 0 as @a store result score @s pos1_X run data get entity @s Pos[0] 10
+execute if score position timer matches 0 as @a store result score @s pos1_Y run data get entity @s Pos[1] 10
+execute if score position timer matches 0 as @a store result score @s pos1_Z run data get entity @s Pos[2] 10
+
+execute if score position timer matches 3 as @a store result score @s pos2_X run data get entity @s Pos[0] 10
+execute if score position timer matches 3 as @a store result score @s pos2_Y run data get entity @s Pos[1] 10
+execute if score position timer matches 3 as @a store result score @s pos2_Z run data get entity @s Pos[2] 10
+
+execute as @a if score @s pos2_X = @s pos1_X run scoreboard players set @s true_moving 0
+execute as @a if score @s pos2_Y = @s pos1_Y run scoreboard players set @s true_moving 0
+execute as @a if score @s pos2_Z = @s pos1_Z run scoreboard players set @s true_moving 0
+execute as @a unless score @s pos2_X = @s pos1_X run scoreboard players set @s true_moving 1
+execute as @a unless score @s pos2_Y = @s pos1_Y run scoreboard players set @s true_moving 1
+execute as @a unless score @s pos2_Z = @s pos1_Z run scoreboard players set @s true_moving 1

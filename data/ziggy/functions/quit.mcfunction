@@ -18,6 +18,15 @@ scoreboard objectives remove playerID
 scoreboard players reset * health
 scoreboard objectives remove health
 
+scoreboard objectives remove pos1_X
+scoreboard objectives remove pos1_Y
+scoreboard objectives remove pos1_Z
+scoreboard objectives remove pos2_X
+scoreboard objectives remove pos2_Y
+scoreboard objectives remove pos2_Z
+
+scoreboard objectives remove true_moving
+
 kill @e[type=item]
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing installation tracker", "italic": true}

@@ -17,3 +17,7 @@ scoreboard objectives remove camoflauged
 
 scoreboard players reset * walk
 scoreboard objectives remove walk
+
+bossbar remove camoflauge_time
+
+scoreboard objectives remove camo_cooldown

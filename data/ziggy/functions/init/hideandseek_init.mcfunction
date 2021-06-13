@@ -22,9 +22,13 @@ scoreboard objectives add hide_seek_timer dummy
 scoreboard objectives add sneaking_timer dummy
 
 scoreboard objectives add camoflauged dummy
+scoreboard objectives add camo_cooldown dummy
 
 scoreboard objectives add walk minecraft.custom:walk_one_cm
 scoreboard players set moving walk 1
 
-scoreboard players set shulkerhealth health_constants 30
-scoreboard players set playerhealth health_constants 20
+bossbar add camoflauge_time {"text": "Hold shift to camoflauge!"}
+bossbar set camoflauge_time color red
+bossbar set camoflauge_time style progress
+bossbar set camoflauge_time visible true
+bossbar set camoflauge_time max 50

@@ -17,13 +17,21 @@ scoreboard players set nextID playerID 1
 scoreboard players set #base playerID 0
 
 scoreboard objectives add health health "Health"
-scoreboard objectives add health_constants dummy
 
 tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
 function ziggy:init/bedwars_init
 
 tellraw @s {"text": "Enabling hide and seek module...", "color": "red", "bold": false}
 function ziggy:init/hideandseek_init
+
+scoreboard objectives add pos1_X dummy
+scoreboard objectives add pos1_Y dummy
+scoreboard objectives add pos1_Z dummy
+scoreboard objectives add pos2_X dummy
+scoreboard objectives add pos2_Y dummy
+scoreboard objectives add pos2_Z dummy
+
+scoreboard objectives add true_moving dummy
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Setting 'installed' to true", "italic": true}
 scoreboard players set installed setup 1
