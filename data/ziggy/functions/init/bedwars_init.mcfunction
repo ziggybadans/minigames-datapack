@@ -11,7 +11,6 @@ execute if score debugging settings matches 1 run tellraw @s {"text": "Adding be
 # Adds bed and death trackers
 scoreboard objectives add bd dummy "Bed Destroyed"
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding death tracker", "italic": true}
-scoreboard objectives add dead deathCount "Dead"
 scoreboard players add red_bed bd 0
 scoreboard players add yellow_bed bd 0
 scoreboard players add green_bed bd 0

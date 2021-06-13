@@ -3,7 +3,9 @@ scoreboard players reset * hs_block
 scoreboard objectives remove hs_block
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing teams", "italic": true}
+team empty hiders
 team remove hiders
+team empty seekers
 team remove seekers
 
 scoreboard players reset * hide_seek_timer

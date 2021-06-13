@@ -9,6 +9,8 @@ scoreboard objectives add game dummy
 scoreboard players set bedwars game 0
 scoreboard players set hide_seek game 0
 
+scoreboard players set hs_timer game 24000
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding global timer", "italic": true}
 scoreboard objectives add timer dummy
 
@@ -17,6 +19,7 @@ scoreboard players set nextID playerID 1
 scoreboard players set #base playerID 0
 
 scoreboard objectives add health health "Health"
+scoreboard objectives add dead deathCount "Dead"
 
 tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
 function ziggy:init/bedwars_init

@@ -20,6 +20,9 @@ execute if score debugging settings matches 1 run tellraw @s {"text": "Adding ti
 scoreboard players set hider_warning timer 0
 scoreboard objectives add hide_seek_timer dummy
 scoreboard objectives add sneaking_timer dummy
+scoreboard objectives add seeker_timer dummy
+
+scoreboard players set hs_endtimer game 300
 
 scoreboard objectives add camoflauged dummy
 scoreboard objectives add camo_cooldown dummy

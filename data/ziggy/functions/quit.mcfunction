@@ -17,6 +17,8 @@ scoreboard objectives remove playerID
 
 scoreboard players reset * health
 scoreboard objectives remove health
+scoreboard players reset * dead
+scoreboard objectives remove dead
 
 scoreboard objectives remove pos1_X
 scoreboard objectives remove pos1_Y

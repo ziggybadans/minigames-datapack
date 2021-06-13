@@ -42,6 +42,9 @@ replaceitem entity @s inventory.23 air 1
 replaceitem entity @s inventory.24 air 1
 replaceitem entity @s inventory.25 air 1
 replaceitem entity @s inventory.26 air 1
+replaceitem entity @s armor.chest air 1
+replaceitem entity @s armor.legs air 1
+replaceitem entity @s armor.feet air 1
 
 # Effect giving
 effect give @e[team=hiders] invisibility 1000000 1 true
@@ -106,3 +109,6 @@ execute if score @s camoflauged matches 2 if data entity @s {HurtTime:10s} run s
 execute if score @s camo_cooldown matches 15 if score @s camoflauged matches 2 if score @s true_moving matches 1 run scoreboard players set @s camoflauged 3
 
 execute if score @s camoflauged matches 3 run function ziggy:hideandseek/uncamoflauge
+
+# Death
+execute if score @s dead matches 1 run function ziggy:hideandseek/dead

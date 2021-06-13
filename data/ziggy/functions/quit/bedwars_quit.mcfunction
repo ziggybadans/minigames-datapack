@@ -9,8 +9,6 @@ scoreboard objectives remove arena_setup
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing bed and death trackers", "italic": true}
 scoreboard players reset * bd
 scoreboard objectives remove bd
-scoreboard players reset * dead
-scoreboard objectives remove dead
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing timers and summoner trackers", "italic": true}
 scoreboard players reset * stage_home
