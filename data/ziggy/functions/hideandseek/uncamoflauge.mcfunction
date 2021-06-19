@@ -24,4 +24,4 @@ scoreboard players set @s camoflauged 0
 scoreboard players reset @s camo_cooldown
 
 bossbar set camoflauge_time color red
-bossbar set camoflauge_time name {"text": "Hold shift to camoflauge"}
+bossbar set camoflauge_time name {"text": "Stay still to camoflauge"}

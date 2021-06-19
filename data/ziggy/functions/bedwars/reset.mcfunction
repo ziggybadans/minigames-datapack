@@ -26,6 +26,8 @@ scoreboard players set emerald_summoner stage_away -1
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting teams", "italic": true}
 team leave @a[team=!]
 
+gamemode survival @a
+
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting beds", "italic": true}
 setblock -1 65 0 red_bed[part=foot,facing=east]
 setblock 0 65 0 red_bed[part=head,facing=east]

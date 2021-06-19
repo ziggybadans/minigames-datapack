@@ -14,6 +14,9 @@ scoreboard objectives remove hide_seek_timer
 scoreboard players reset * sneaking_timer
 scoreboard objectives remove sneaking_timer
 
+scoreboard players reset * seeker_timer
+scoreboard objectives remove seeker_timer
+
 scoreboard players reset * camoflauged
 scoreboard objectives remove camoflauged
 

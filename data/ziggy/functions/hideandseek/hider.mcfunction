@@ -51,16 +51,20 @@ effect give @e[team=hiders] invisibility 1000000 1 true
 
 # Heartbeat when near seekers
 execute if entity @a[team=seekers, distance=..15] run function ziggy:hideandseek/heartbeat
-##execute as @s if score testing_hide_seek game matches 1 run function ziggy:hideandseek/heartbeat
+#execute as @s if score testing_hide_seek game matches 1 run function ziggy:hideandseek/heartbeat
 
 # Camoflauge
 # 0 = not, 1 = in progress, 2 = done, 3 = uncamo
 
-execute unless predicate ziggy:is_sneaking run scoreboard players set @s sneaking_timer 0
-execute if predicate ziggy:is_sneaking if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
-execute as @s store result bossbar camoflauge_time value run scoreboard players get @s sneaking_timer
+#execute unless predicate ziggy:is_sneaking run scoreboard players set @s sneaking_timer 0
+#execute if predicate ziggy:is_sneaking if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
+#execute as @s store result bossbar camoflauge_time value run scoreboard players get @s sneaking_timer
 
-execute if score @s sneaking_timer matches 50 if score @s camoflauged matches 0 at @s as @s run function ziggy:hideandseek/camoflauge
+execute if score @s true_moving matches 1 run scoreboard players set @s sneaking_timer -10
+execute if score @s true_moving matches 0 if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
+execute as @s if score @s camoflauged matches 0 store result bossbar camoflauge_time value run scoreboard players get @s sneaking_timer
+
+execute if score @s sneaking_timer matches 50 if score @s camoflauged matches 0 unless score hs_timer game matches 0 at @s as @s run function ziggy:hideandseek/camoflauge
 execute if score @s camoflauged matches 1 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time:1}
 execute if score @s camoflauged matches 1 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time:1}
 execute if score @s camoflauged matches 1 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time:1}

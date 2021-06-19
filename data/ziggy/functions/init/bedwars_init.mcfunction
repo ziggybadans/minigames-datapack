@@ -1,6 +1,6 @@
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding arena setup functions", "italic": true}
 scoreboard objectives add arena_setup dummy
-##Set this to -1 once arena setup run command is done
+#Set this to -1 once arena setup run command is done
 scoreboard players set coords arena_setup 0
 #-scoreboard players set radius_detection arena_setup 10
 #-scoreboard players set radius_detection_threshold arena_setup 3
@@ -58,5 +58,5 @@ team modify blue friendlyFire false
 #Places beds if beds aren't already there
 execute store success score bedsplaced setup run setblock 0 65 0 red_bed[part=head] keep
 execute if score debugging settings matches 1 if score bedsplaced setup matches 1 run tellraw @s {"text": "Placing beds...", "italic": true}
-execute if score bedsplaced setup matches 1 run function ziggy:run/reset
+execute if score bedsplaced setup matches 1 run function ziggy:bedwars/reset
 execute if score debugging settings matches 1 if score bedsplaced setup matches 0 run tellraw @s {"text": "Beds are already placed!", "italic": true}
