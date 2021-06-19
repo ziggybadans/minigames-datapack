@@ -1,8 +1,13 @@
 #bedwars
-execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=red] if block 0 65 0 air if score red_bed bd matches 0 run function ziggy:bedwars/game/bed_d/red_bd
-execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=yellow] if block -6 65 6 air if score yellow_bed bd matches 0 run function ziggy:bedwars/game/bed_d/yellow_bd
-execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=green] if block -6 65 -6 air if score green_bed bd matches 0 run function ziggy:bedwars/game/bed_d/green_bd
-execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=blue] if block -12 65 0 air if score blue_bed bd matches 0 run function ziggy:bedwars/game/bed_d/blue_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=red] if block ~ ~ ~ air if score red_bed bd matches 0 run function ziggy:bedwars/game/bed_d/red_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=yellow] if block ~ ~ ~ air if score yellow_bed bd matches 0 run function ziggy:bedwars/game/bed_d/yellow_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=green] if block ~ ~ ~ air if score green_bed bd matches 0 run function ziggy:bedwars/game/bed_d/green_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 at @e[type=item_frame,tag=blue] if block ~ ~ ~ air if score blue_bed bd matches 0 run function ziggy:bedwars/game/bed_d/blue_bd
+
+execute if score bedwars game matches 1 if score installed setup matches 1 if block 0 65 0 air if score red_bed bd matches 0 run function ziggy:bedwars/game/bed_d/red_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 if block -6 65 6 air if score yellow_bed bd matches 0 run function ziggy:bedwars/game/bed_d/yellow_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 if block -6 65 -6 air if score green_bed bd matches 0 run function ziggy:bedwars/game/bed_d/green_bd
+execute if score bedwars game matches 1 if score installed setup matches 1 if block -12 65 0 air if score blue_bed bd matches 0 run function ziggy:bedwars/game/bed_d/blue_bd
 
 execute if score bedwars game matches 1 if score installed setup matches 1 as @a[scores={bd=1,dead=1}] run function ziggy:bedwars/game/dead
 
