@@ -8,4 +8,4 @@ team join blue @r[team=]
 
 scoreboard players set @a dead 0
 
-scoreboard players set active game 1
+scoreboard players set bedwars game 1
