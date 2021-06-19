@@ -16,6 +16,10 @@ execute as @a at @s if entity @s[y=-30,dy=15] run function ziggy:bedwars/tools/t
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
 #hideandseek
+execute unless score nextID playerID >= #minimum playerID run scoreboard players set hs_lobby timer 600
+execute if score nextID playerID >= #minimum playerID run scoreboard players remove hs_lobby timer 1
+execute if score hs_lobby timer matches 0 run function ziggy:hideandseek/start
+
 execute if score hide_seek game matches 1 run scoreboard players add hider_warning timer 1
 execute if score hider_warning timer matches 45 run scoreboard players set hider_warning timer 0
 execute as @a[team=hiders] at @s anchored feet if score hide_seek game matches 1 run function ziggy:hideandseek/hider

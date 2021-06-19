@@ -2,6 +2,8 @@ execute if score debugging settings matches 1 run tellraw @s {"text": "Adding ro
 scoreboard objectives add hs_block dummy
 scoreboard players set @a hs_block -1
 
+scoreboard players set hs_lobby timer 600
+
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding hider and seeker teams", "italic": true}
 team add hiders "Hiders"
 team add seekers "Seekers"

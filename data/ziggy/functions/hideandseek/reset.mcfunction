@@ -22,7 +22,7 @@ scoreboard players reset * dead
 clear @a
 effect clear @a
 gamemode survival @a
-teleport @a 0 66 0
+teleport @a -7 71 24
 
 scoreboard players set @a[team=hiders] camoflauged 0
 

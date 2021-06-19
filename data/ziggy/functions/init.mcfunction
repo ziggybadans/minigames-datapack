@@ -17,6 +17,7 @@ scoreboard objectives add timer dummy
 scoreboard objectives add playerID dummy
 scoreboard players set nextID playerID 1
 scoreboard players set #base playerID 0
+scoreboard players set #minimum playerID 2
 
 scoreboard objectives add health health "Health"
 scoreboard objectives add dead deathCount "Dead"

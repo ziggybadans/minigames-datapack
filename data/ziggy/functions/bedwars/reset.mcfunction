@@ -27,6 +27,7 @@ execute if score debugging settings matches 1 if score installed setup matches 1
 team leave @a[team=!]
 
 gamemode survival @a
+teleport @a -7 71 24
 
 execute if score debugging settings matches 1 if score installed setup matches 1 run tellraw @s {"text": "Resetting beds", "italic": true}
 setblock -1 65 0 red_bed[part=foot,facing=east]
