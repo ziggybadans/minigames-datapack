@@ -1,5 +1,3 @@
-op @a
-
 tellraw @a ["",{"text":"What team would you like to be on?","bold":true},"\n",{"text":"Hiders","underlined":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/execute if score hide_seek game matches 0 run function ziggy:hideandseek/join_hiders"}}," ",{"text":"Seekers","underlined":true,"color":"dark_red","clickEvent":{"action":"run_command","value":"/execute if score hide_seek game matches 0 run function ziggy:hideandseek/join_seekers"}}]
 
 #team join hiders @r[team=]
