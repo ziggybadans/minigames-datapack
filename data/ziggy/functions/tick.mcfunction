@@ -11,7 +11,7 @@ execute if score bedwars game matches 1 if score installed setup matches 1 if bl
 
 execute if score bedwars game matches 1 if score installed setup matches 1 as @a[scores={bd=1,dead=1}] run function ziggy:bedwars/game/dead
 
-execute as @a at @s if entity @s[y=-30,dy=15] run function ziggy:bedwars/tools/tp
+execute as @a at @s if entity @s[y=-30,dy=15] run function ziggy:tools/tp
 
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
@@ -29,6 +29,7 @@ execute if score currentID playerID matches 2 run bossbar set hs_lobby color gre
 execute if score currentID playerID matches 2 run bossbar set hs_lobby style progress
 execute if score currentID playerID matches 2 run bossbar set hs_lobby max 300
 execute if score currentID playerID matches 2 run bossbar set hs_lobby name {"text": "Starting game..."}
+
 execute if score currentID playerID matches 2 store result bossbar hs_lobby value run scoreboard players get hs_lobby timer
 execute unless score nextID playerID > #minimum playerID run scoreboard players set hs_lobby timer 300
 execute if score nextID playerID > #minimum playerID unless score hs_lobby timer matches 0 run scoreboard players remove hs_lobby timer 1

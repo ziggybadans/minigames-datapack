@@ -22,7 +22,23 @@ scoreboard players operation @e[type=shulker,distance=..1,tag=hideandseek] playe
 
 #effect give @e[type=shulker,tag=hideandseek] invisibility 1000000 1 true
 
-bossbar set camoflauge_time color green
-bossbar set camoflauge_time name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 1 run bossbar set camoflauge_time1 color green
+execute if score @s playerID matches 1 run bossbar set camoflauge_time1 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 2 run bossbar set camoflauge_time2 color green
+execute if score @s playerID matches 2 run bossbar set camoflauge_time2 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 3 run bossbar set camoflauge_time3 color green
+execute if score @s playerID matches 3 run bossbar set camoflauge_time3 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 4 run bossbar set camoflauge_time4 color green
+execute if score @s playerID matches 4 run bossbar set camoflauge_time4 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 5 run bossbar set camoflauge_time5 color green
+execute if score @s playerID matches 5 run bossbar set camoflauge_time5 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 6 run bossbar set camoflauge_time6 color green
+execute if score @s playerID matches 6 run bossbar set camoflauge_time6 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 7 run bossbar set camoflauge_time7 color green
+execute if score @s playerID matches 7 run bossbar set camoflauge_time7 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 8 run bossbar set camoflauge_time8 color green
+execute if score @s playerID matches 8 run bossbar set camoflauge_time8 name {"text": "Camoflauged!","color": "blue"}
+execute if score @s playerID matches 9 run bossbar set camoflauge_time9 color green
+execute if score @s playerID matches 9 run bossbar set camoflauge_time9 name {"text": "Camoflauged!","color": "blue"}
 
 scoreboard players set @s camoflauged 2

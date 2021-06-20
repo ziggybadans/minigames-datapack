@@ -33,11 +33,51 @@ scoreboard objectives add camo_cooldown dummy
 scoreboard objectives add walk minecraft.custom:walk_one_cm
 scoreboard players set moving walk 1
 
-bossbar add camoflauge_time {"text": "Stay still to camoflauge"}
-bossbar set camoflauge_time color red
-bossbar set camoflauge_time style progress
-bossbar set camoflauge_time visible true
-bossbar set camoflauge_time max 50
+bossbar add camoflauge_time1 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time1 color red
+bossbar set camoflauge_time1 style progress
+bossbar set camoflauge_time1 visible true
+bossbar set camoflauge_time1 max 50
+bossbar add camoflauge_time2 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time2 color red
+bossbar set camoflauge_time2 style progress
+bossbar set camoflauge_time2 visible true
+bossbar set camoflauge_time2 max 50
+bossbar add camoflauge_time3 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time3 color red
+bossbar set camoflauge_time3 style progress
+bossbar set camoflauge_time3 visible true
+bossbar set camoflauge_time3 max 50
+bossbar add camoflauge_time4 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time4 color red
+bossbar set camoflauge_time4 style progress
+bossbar set camoflauge_time4 visible true
+bossbar set camoflauge_time4 max 50
+bossbar add camoflauge_time5 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time5 color red
+bossbar set camoflauge_time5 style progress
+bossbar set camoflauge_time5 visible true
+bossbar set camoflauge_time5 max 50
+bossbar add camoflauge_time6 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time6 color red
+bossbar set camoflauge_time6 style progress
+bossbar set camoflauge_time6 visible true
+bossbar set camoflauge_time6 max 50
+bossbar add camoflauge_time7 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time7 color red
+bossbar set camoflauge_time7 style progress
+bossbar set camoflauge_time7 visible true
+bossbar set camoflauge_time7 max 50
+bossbar add camoflauge_time8 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time8 color red
+bossbar set camoflauge_time8 style progress
+bossbar set camoflauge_time8 visible true
+bossbar set camoflauge_time8 max 50
+bossbar add camoflauge_time9 {"text": "Stay still to camoflauge"}
+bossbar set camoflauge_time9 color red
+bossbar set camoflauge_time9 style progress
+bossbar set camoflauge_time9 visible true
+bossbar set camoflauge_time9 max 50
 
 bossbar add hs_lobby {"text": "- more players needed!"}
 bossbar set hs_lobby color blue

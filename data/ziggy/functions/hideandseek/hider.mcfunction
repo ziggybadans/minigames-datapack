@@ -62,7 +62,16 @@ execute if entity @a[team=seekers, distance=..15] run function ziggy:hideandseek
 
 execute if score @s true_moving matches 1 run scoreboard players set @s sneaking_timer -10
 execute if score @s true_moving matches 0 if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
-execute as @s if score @s camoflauged matches 0 store result bossbar camoflauge_time value run scoreboard players get @s sneaking_timer
+
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 1 store result bossbar camoflauge_time1 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 2 store result bossbar camoflauge_time2 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 3 store result bossbar camoflauge_time3 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 4 store result bossbar camoflauge_time4 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 5 store result bossbar camoflauge_time5 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 6 store result bossbar camoflauge_time6 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 7 store result bossbar camoflauge_time7 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 8 store result bossbar camoflauge_time8 value run scoreboard players get @s sneaking_timer
+execute as @s if score @s camoflauged matches 0 if score @s playerID matches 9 store result bossbar camoflauge_time9 value run scoreboard players get @s sneaking_timer
 
 execute if score @s sneaking_timer matches 50 if score @s camoflauged matches 0 unless score hs_timer game matches 0 at @s as @s run function ziggy:hideandseek/camoflauge
 execute if score @s camoflauged matches 1 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time:1}
