@@ -24,6 +24,9 @@ scoreboard players reset * walk
 scoreboard objectives remove walk
 
 bossbar remove camoflauge_time
+bossbar remove hs_lobby
+
+tag @a remove hideandseek
 
 scoreboard objectives remove camo_cooldown
 

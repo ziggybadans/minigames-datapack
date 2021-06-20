@@ -38,3 +38,9 @@ bossbar set camoflauge_time color red
 bossbar set camoflauge_time style progress
 bossbar set camoflauge_time visible true
 bossbar set camoflauge_time max 50
+
+bossbar add hs_lobby {"text": "- more players needed!"}
+bossbar set hs_lobby color blue
+bossbar set hs_lobby style notched_10
+bossbar set hs_lobby visible true
+bossbar set hs_lobby max 10

@@ -10,5 +10,8 @@ execute if score @s playerID matches 9 run scoreboard players remove @a[scores={
 
 scoreboard players reset @s playerID
 scoreboard players remove nextID playerID 1
+scoreboard players remove currentID playerID 1
+
+tag @s remove hideandseek
 
 teleport -7 71 24
