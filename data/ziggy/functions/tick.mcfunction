@@ -11,7 +11,7 @@ execute if score bedwars game matches 1 if score installed setup matches 1 if bl
 
 execute if score bedwars game matches 1 if score installed setup matches 1 as @a[scores={bd=1,dead=1}] run function ziggy:bedwars/game/dead
 
-execute as @a at @s if entity @s[y=-30,dy=15] run function ziggy:tools/tp
+execute as @a[y=-30,dy=15] at @s run function ziggy:tools/tp
 
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
