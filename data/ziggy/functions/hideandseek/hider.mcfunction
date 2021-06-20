@@ -1,8 +1,12 @@
 # Block on head
-# 1 = oak_leaves; 2 = hopper, 3 = jungle_wood
-execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head oak_leaves 1
-execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head hopper 1
-execute if score @s hs_block matches 3 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
+#soulsand, black wool, jungle wood, redstone block, bricks, quartz_pillar
+execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
+execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head black_wool 1
+execute if score @s hs_block matches 3 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head bricks 1
+execute if score @s hs_block matches 4 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head redstone_block 1
+execute if score @s hs_block matches 5 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head quartz_pillar 1
+execute if score @s hs_block matches 6 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head soul_sand 1
+
 
 # Inventory auto-clearing
 replaceitem entity @s weapon.offhand air 1

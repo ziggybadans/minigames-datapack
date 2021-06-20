@@ -23,7 +23,15 @@ scoreboard objectives remove camoflauged
 scoreboard players reset * walk
 scoreboard objectives remove walk
 
-bossbar remove camoflauge_time
+bossbar remove camoflauge_time1
+bossbar remove camoflauge_time2
+bossbar remove camoflauge_time3
+bossbar remove camoflauge_time4
+bossbar remove camoflauge_time5
+bossbar remove camoflauge_time6
+bossbar remove camoflauge_time7
+bossbar remove camoflauge_time8
+bossbar remove camoflauge_time9
 bossbar remove hs_lobby
 
 tag @a remove hideandseek

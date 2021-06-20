@@ -11,26 +11,27 @@ execute if score bedwars game matches 1 if score installed setup matches 1 if bl
 
 execute if score bedwars game matches 1 if score installed setup matches 1 as @a[scores={bd=1,dead=1}] run function ziggy:bedwars/game/dead
 
-execute as @a[y=-30,dy=15] at @s run function ziggy:tools/tp
+#execute as @a[y=-30,dy=15] at @s run function ziggy:tools/tp
 
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
 #hideandseek
 bossbar set hs_lobby players @a[tag=hideandseek]
 execute store result bossbar hs_lobby value run scoreboard players get currentID playerID
-execute if score currentID playerID matches 0 run bossbar set hs_lobby name {"text": "2 more players needed!"}
-execute if score currentID playerID matches 1 run bossbar set hs_lobby name {"text": "1 more players needed!"}
+execute if score currentID playerID matches 0 run bossbar set hs_lobby name {"text": "3 more players needed!"}
+execute if score currentID playerID matches 1 run bossbar set hs_lobby name {"text": "2 more players needed!"}
+execute if score currentID playerID matches 2 run bossbar set hs_lobby name {"text": "1 more player needed!"}
 
-execute unless score currentID playerID matches 2 run bossbar set hs_lobby color blue
-execute unless score currentID playerID matches 2 run bossbar set hs_lobby style notched_10
-execute unless score currentID playerID matches 2 run bossbar set hs_lobby max 10
+execute unless score currentID playerID matches 3 run bossbar set hs_lobby color blue
+execute unless score currentID playerID matches 3 run bossbar set hs_lobby style notched_10
+execute unless score currentID playerID matches 3 run bossbar set hs_lobby max 10
 
-execute if score currentID playerID matches 2 run bossbar set hs_lobby color green
-execute if score currentID playerID matches 2 run bossbar set hs_lobby style progress
-execute if score currentID playerID matches 2 run bossbar set hs_lobby max 300
-execute if score currentID playerID matches 2 run bossbar set hs_lobby name {"text": "Starting game..."}
+execute if score currentID playerID matches 3 run bossbar set hs_lobby color green
+execute if score currentID playerID matches 3 run bossbar set hs_lobby style progress
+execute if score currentID playerID matches 3 run bossbar set hs_lobby max 300
+execute if score currentID playerID matches 3 run bossbar set hs_lobby name {"text": "Starting game..."}
 
-execute if score currentID playerID matches 2 store result bossbar hs_lobby value run scoreboard players get hs_lobby timer
+execute if score currentID playerID matches 3 store result bossbar hs_lobby value run scoreboard players get hs_lobby timer
 execute unless score nextID playerID > #minimum playerID run scoreboard players set hs_lobby timer 300
 execute if score nextID playerID > #minimum playerID unless score hs_lobby timer matches 0 run scoreboard players remove hs_lobby timer 1
 execute if score hs_lobby timer matches 0 run function ziggy:hideandseek/start
