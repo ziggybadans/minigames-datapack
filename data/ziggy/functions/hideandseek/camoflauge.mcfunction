@@ -2,9 +2,9 @@ scoreboard players set @s camoflauged 1
 
 gamemode spectator @s
 
-execute if score @s hs_block matches 1 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:oak_leaves"},Time:570,DropItem:false}
-execute if score @s hs_block matches 2 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:hopper"},Time:570,DropItem:false}
-execute if score @s hs_block matches 3 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:jungle_wood"},Time:570,DropItem:false}
+execute if score @s hs_block matches 0 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:oak_leaves"},Time:570,DropItem:false}
+execute if score @s hs_block matches 1 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:hopper"},Time:570,DropItem:false}
+execute if score @s hs_block matches 2 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity:true,Tags:[hideandseek],BlockState:{Name:"minecraft:jungle_wood"},Time:570,DropItem:false}
 scoreboard players operation @e[type=falling_block,distance=..1,tag=hideandseek] playerID = @s playerID
 
 execute align xyz positioned ~0.5 ~ ~0.5 run summon shulker ~ ~ ~ {ActiveEffects:[{Id:14b,ShowParticles:false}],NoAI:true,Silent:true,NoGravity:true,Tags:[hideandseek],Team:hiders}

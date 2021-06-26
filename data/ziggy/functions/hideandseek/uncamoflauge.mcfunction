@@ -20,8 +20,24 @@ execute as @s[scores={playerID=7}] run kill @e[type=falling_block,tag=hideandsee
 execute as @s[scores={playerID=8}] run kill @e[type=falling_block,tag=hideandseek,scores={playerID=8}]
 execute as @s[scores={playerID=9}] run kill @e[type=falling_block,tag=hideandseek,scores={playerID=9}]
 
+execute if score @s playerID matches 1 run bossbar set camoflauge_time1 color red
+execute if score @s playerID matches 1 run bossbar set camoflauge_time1 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 2 run bossbar set camoflauge_time2 color red
+execute if score @s playerID matches 2 run bossbar set camoflauge_time2 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 3 run bossbar set camoflauge_time3 color red
+execute if score @s playerID matches 3 run bossbar set camoflauge_time3 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 4 run bossbar set camoflauge_time4 color red
+execute if score @s playerID matches 4 run bossbar set camoflauge_time4 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 5 run bossbar set camoflauge_time5 color red
+execute if score @s playerID matches 5 run bossbar set camoflauge_time5 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 6 run bossbar set camoflauge_time6 color red
+execute if score @s playerID matches 6 run bossbar set camoflauge_time6 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 7 run bossbar set camoflauge_time7 color red
+execute if score @s playerID matches 7 run bossbar set camoflauge_time7 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 8 run bossbar set camoflauge_time8 color red
+execute if score @s playerID matches 8 run bossbar set camoflauge_time8 name {"text": "Sneak to camoflauge"}
+execute if score @s playerID matches 9 run bossbar set camoflauge_time9 color red
+execute if score @s playerID matches 9 run bossbar set camoflauge_time9 name {"text": "Sneak to camoflauge"}
+
 scoreboard players set @s camoflauged 0
 scoreboard players reset @s camo_cooldown
-
-bossbar set camoflauge_time color red
-bossbar set camoflauge_time name {"text": "Stay still to camoflauge"}

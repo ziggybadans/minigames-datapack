@@ -29,6 +29,9 @@ scoreboard objectives remove pos2_Z
 
 scoreboard objectives remove true_moving
 
+scoreboard objectives remove range
+scoreboard objectives remove random
+
 kill @e[type=item]
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Removing installation tracker", "italic": true}

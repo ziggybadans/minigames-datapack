@@ -26,7 +26,20 @@ teleport @a -7 71 24
 
 scoreboard players set @a[team=hiders] camoflauged 0
 
-bossbar set camoflauge_time players
+bossbar set camoflauge_time1 players
+bossbar set camoflauge_time2 players
+bossbar set camoflauge_time3 players
+bossbar set camoflauge_time4 players
+bossbar set camoflauge_time5 players
+bossbar set camoflauge_time6 players
+bossbar set camoflauge_time7 players
+bossbar set camoflauge_time8 players
+bossbar set camoflauge_time9 players
+
+bossbar set hs_time name {"text": "Hide and Seek", "bold": true}
+bossbar set hs_time color blue
+bossbar set hs_time players
+
 tag @a remove hideandseek
 
 bossbar set hs_lobby color blue

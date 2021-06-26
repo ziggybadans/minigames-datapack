@@ -1,8 +1,8 @@
 # Block on head
 # 1 = oak_leaves; 2 = hopper, 3 = jungle_wood
-execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head oak_leaves 1
-execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head hopper 1
-execute if score @s hs_block matches 3 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
+execute if score @s hs_block matches 0 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head oak_leaves 1
+execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head hopper 1
+execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
 
 # Inventory auto-clearing
 replaceitem entity @s weapon.offhand air 1
@@ -56,12 +56,20 @@ execute if entity @a[team=seekers, distance=..15] run function ziggy:hideandseek
 # Camoflauge
 # 0 = not, 1 = in progress, 2 = done, 3 = uncamo
 
-#execute unless predicate ziggy:is_sneaking run scoreboard players set @s sneaking_timer 0
-#execute if predicate ziggy:is_sneaking if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
-#execute as @s store result bossbar camoflauge_time value run scoreboard players get @s sneaking_timer
+execute unless predicate ziggy:is_sneaking run scoreboard players set @s sneaking_timer 0
+execute if predicate ziggy:is_sneaking if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
+execute as @s[scores={playerID=1}] store result bossbar camoflauge_time1 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=2}] store result bossbar camoflauge_time2 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=3}] store result bossbar camoflauge_time3 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=4}] store result bossbar camoflauge_time4 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=5}] store result bossbar camoflauge_time5 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=6}] store result bossbar camoflauge_time6 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=7}] store result bossbar camoflauge_time7 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=8}] store result bossbar camoflauge_time8 value run scoreboard players get @s sneaking_timer
+execute as @s[scores={playerID=9}] store result bossbar camoflauge_time9 value run scoreboard players get @s sneaking_timer
 
-execute if score @s true_moving matches 1 run scoreboard players set @s sneaking_timer -10
-execute if score @s true_moving matches 0 if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
+#execute if score @s true_moving matches 1 run scoreboard players set @s sneaking_timer -10
+#execute if score @s true_moving matches 0 if score @s camoflauged matches 0 run scoreboard players add @s sneaking_timer 1
 
 execute as @s if score @s camoflauged matches 0 if score @s playerID matches 1 store result bossbar camoflauge_time1 value run scoreboard players get @s sneaking_timer
 execute as @s if score @s camoflauged matches 0 if score @s playerID matches 2 store result bossbar camoflauge_time2 value run scoreboard players get @s sneaking_timer

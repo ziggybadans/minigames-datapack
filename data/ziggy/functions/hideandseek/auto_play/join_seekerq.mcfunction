@@ -1,0 +1,1 @@
+scoreboard players set @s seeker_queue 1

@@ -23,6 +23,9 @@ scoreboard players set #minimum playerID 2
 scoreboard objectives add health health "Health"
 scoreboard objectives add dead deathCount "Dead"
 
+scoreboard objectives add range dummy
+scoreboard objectives add random dummy
+
 tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
 function ziggy:init/bedwars_init
 

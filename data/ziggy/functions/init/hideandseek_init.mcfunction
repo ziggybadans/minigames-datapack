@@ -25,6 +25,9 @@ scoreboard objectives add sneaking_timer dummy
 scoreboard players set base sneaking_timer 0
 scoreboard objectives add seeker_timer dummy
 
+scoreboard objectives add seeker_queue dummy
+scoreboard players set success seeker_queue 0
+
 scoreboard players set hs_endtimer game 300
 
 scoreboard objectives add camoflauged dummy
@@ -33,47 +36,49 @@ scoreboard objectives add camo_cooldown dummy
 scoreboard objectives add walk minecraft.custom:walk_one_cm
 scoreboard players set moving walk 1
 
-bossbar add camoflauge_time1 {"text": "Stay still to camoflauge"}
+scoreboard players set hideandseek range 3
+
+bossbar add camoflauge_time1 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time1 color red
 bossbar set camoflauge_time1 style progress
 bossbar set camoflauge_time1 visible true
 bossbar set camoflauge_time1 max 50
-bossbar add camoflauge_time2 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time2 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time2 color red
 bossbar set camoflauge_time2 style progress
 bossbar set camoflauge_time2 visible true
 bossbar set camoflauge_time2 max 50
-bossbar add camoflauge_time3 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time3 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time3 color red
 bossbar set camoflauge_time3 style progress
 bossbar set camoflauge_time3 visible true
 bossbar set camoflauge_time3 max 50
-bossbar add camoflauge_time4 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time4 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time4 color red
 bossbar set camoflauge_time4 style progress
 bossbar set camoflauge_time4 visible true
 bossbar set camoflauge_time4 max 50
-bossbar add camoflauge_time5 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time5 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time5 color red
 bossbar set camoflauge_time5 style progress
 bossbar set camoflauge_time5 visible true
 bossbar set camoflauge_time5 max 50
-bossbar add camoflauge_time6 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time6 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time6 color red
 bossbar set camoflauge_time6 style progress
 bossbar set camoflauge_time6 visible true
 bossbar set camoflauge_time6 max 50
-bossbar add camoflauge_time7 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time7 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time7 color red
 bossbar set camoflauge_time7 style progress
 bossbar set camoflauge_time7 visible true
 bossbar set camoflauge_time7 max 50
-bossbar add camoflauge_time8 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time8 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time8 color red
 bossbar set camoflauge_time8 style progress
 bossbar set camoflauge_time8 visible true
 bossbar set camoflauge_time8 max 50
-bossbar add camoflauge_time9 {"text": "Stay still to camoflauge"}
+bossbar add camoflauge_time9 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time9 color red
 bossbar set camoflauge_time9 style progress
 bossbar set camoflauge_time9 visible true
@@ -84,3 +89,9 @@ bossbar set hs_lobby color blue
 bossbar set hs_lobby style notched_10
 bossbar set hs_lobby visible true
 bossbar set hs_lobby max 10
+
+bossbar add hs_time {"text": "Hide and Seek"}
+bossbar set hs_time color blue
+bossbar set hs_time style notched_20
+bossbar set hs_time visible true
+bossbar set hs_time max 24000

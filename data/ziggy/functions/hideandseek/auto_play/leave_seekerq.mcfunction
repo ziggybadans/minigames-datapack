@@ -1,0 +1,1 @@
+scoreboard players reset @s seeker_queue
