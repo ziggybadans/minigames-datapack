@@ -11,7 +11,7 @@ scoreboard players reset @a seeker_timer
 scoreboard players reset @a camo_cooldown
 scoreboard players reset @a sneaking_timer
 
-kill @e[tag=hideandseek]
+kill @e[tag=hideandseek,type=!player]
 
 scoreboard players reset @a playerID
 scoreboard players set nextID playerID 1
@@ -22,7 +22,7 @@ scoreboard players reset * dead
 clear @a
 effect clear @a
 gamemode survival @a
-teleport @a -7 71 24
+teleport @a 2 53 10
 
 scoreboard players set @a[team=hiders] camoflauged 0
 

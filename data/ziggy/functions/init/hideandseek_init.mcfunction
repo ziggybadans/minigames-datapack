@@ -10,12 +10,12 @@ team add seekers "Seekers"
 team modify hiders color green
 team modify hiders collisionRule always
 team modify hiders friendlyFire false
-team modify hiders nametagVisibility always
+team modify hiders nametagVisibility hideForOtherTeams
 team modify hiders prefix {"text": "[Hider]","color": "grey","bold": true}
 team modify seekers color red
 team modify seekers collisionRule pushOtherTeams
 team modify seekers friendlyFire false
-team modify seekers nametagVisibility hideForOtherTeams
+team modify seekers nametagVisibility always
 team modify seekers prefix {"text": "[Seeker]","color": "grey","bold": true}
 
 execute if score debugging settings matches 1 run tellraw @s {"text": "Adding timers", "italic": true}
@@ -36,7 +36,7 @@ scoreboard objectives add camo_cooldown dummy
 scoreboard objectives add walk minecraft.custom:walk_one_cm
 scoreboard players set moving walk 1
 
-scoreboard players set hideandseek range 3
+scoreboard players set hideandseek range 5
 
 bossbar add camoflauge_time1 {"text": "Sneak to camoflauge"}
 bossbar set camoflauge_time1 color red

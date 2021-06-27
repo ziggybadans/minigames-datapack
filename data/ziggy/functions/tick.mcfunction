@@ -16,6 +16,10 @@ execute if score bedwars game matches 1 if score installed setup matches 1 as @a
 execute if score bedwars game matches 1 run function ziggy:bedwars/game/summoner_loop
 
 ##hideandseek
+
+effect give @a saturation 100000 1 true
+effect give @e[type=shulker,tag=hideandseek] invisibility 1000000 1 true
+
 execute store result bossbar hs_time value run scoreboard players get hs_timer game
 execute if score hide_seek game matches 1 run bossbar set hs_time players @a[tag=hideandseek]
 

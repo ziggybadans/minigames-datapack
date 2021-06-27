@@ -1,8 +1,11 @@
 # Block on head
-# 1 = oak_leaves; 2 = hopper, 3 = jungle_wood
-execute if score @s hs_block matches 0 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head oak_leaves 1
-execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head hopper 1
-execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
+# 1 = soul sand, 2 = jungle wood, 3 = black wool, 4 = redstone block, 5 = quartz pillar, 6 = stone bricks
+execute if score @s hs_block matches 0 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head soul_sand 1
+execute if score @s hs_block matches 1 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head jungle_wood 1
+execute if score @s hs_block matches 2 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head black_wool 1
+execute if score @s hs_block matches 3 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head redstone_block 1
+execute if score @s hs_block matches 4 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head quartz_pillar 1
+execute if score @s hs_block matches 5 unless score @s camoflauged matches 1 run replaceitem entity @s armor.head stone_bricks 1
 
 # Inventory auto-clearing
 replaceitem entity @s weapon.offhand air 1
@@ -47,7 +50,7 @@ replaceitem entity @s armor.legs air 1
 replaceitem entity @s armor.feet air 1
 
 # Effect giving
-effect give @e[team=hiders] invisibility 1000000 1 true
+#effect give @e[team=hiders] invisibility 1000000 1 true
 
 # Heartbeat when near seekers
 execute if entity @a[team=seekers, distance=..15] run function ziggy:hideandseek/heartbeat
