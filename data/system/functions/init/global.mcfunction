@@ -28,9 +28,12 @@ scoreboard objectives add health health "Health"
 scoreboard objectives add dead deathCount "Dead"
 
 scoreboard objectives add random dummy
+#define objective range Range for random function to utilise
 scoreboard objectives add range dummy
 
+tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
 function system:init/bedwars
+tellraw @s {"text": "Enabling hide and seek module...", "color": "red", "bold": false}
 function system:init/hideandseek
 
 scoreboard players set installed setup 1
