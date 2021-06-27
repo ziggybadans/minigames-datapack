@@ -22,18 +22,18 @@ scoreboard players reset * camo_cooldown
 scoreboard objectives remove camo_cooldown
 
 #region Bossbars
-bossbar remove camoflauge_time1
-bossbar remove camoflauge_time2
-bossbar remove camoflauge_time3
-bossbar remove camoflauge_time4
-bossbar remove camoflauge_time5
-bossbar remove camoflauge_time6
-bossbar remove camoflauge_time7
-bossbar remove camoflauge_time8
-bossbar remove camoflauge_time9
+bossbar remove hs:camouflage1
+bossbar remove hs:camouflage2
+bossbar remove hs:camouflage3
+bossbar remove hs:camouflage4
+bossbar remove hs:camouflage5
+bossbar remove hs:camouflage6
+bossbar remove hs:camouflage7
+bossbar remove hs:camouflage8
+bossbar remove hs:camouflage9
 
-bossbar remove hs_lobby
-bossbar remove hs_time
+bossbar remove hs:lobby
+bossbar remove hs:game_length
 #endregion
 
 tag @a remove hideandseek

@@ -34,8 +34,8 @@ scoreboard objectives remove pos2_X
 scoreboard objectives remove pos2_Y
 scoreboard objectives remove pos2_Z
 
-scoreboard players reset * true_moving
-scoreboard objectives remove true_moving
+scoreboard players reset * moving
+scoreboard objectives remove moving
 #endregion
 
 scoreboard players reset * health

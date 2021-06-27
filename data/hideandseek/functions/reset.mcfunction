@@ -1,27 +1,27 @@
 scoreboard players set @a hs_block -1
 
-scoreboard players set hs_lobby hs_timers 600
-scoreboard players set hs_endtimer game 300
+scoreboard players set lobby hs_timers 600
+scoreboard players set endtimer hs_timers 300
 
 scoreboard players set hider_warning hs_timers 0
 
 scoreboard players set success seeker_queue 0
 
-bossbar set camoflauge_time1 players
-bossbar set camoflauge_time2 players
-bossbar set camoflauge_time3 players
-bossbar set camoflauge_time4 players
-bossbar set camoflauge_time5 players
-bossbar set camoflauge_time6 players
-bossbar set camoflauge_time7 players
-bossbar set camoflauge_time8 players
-bossbar set camoflauge_time9 players
+bossbar set hs:camouflage1 players
+bossbar set hs:camouflage2 players
+bossbar set hs:camouflage3 players
+bossbar set hs:camouflage4 players
+bossbar set hs:camouflage5 players
+bossbar set hs:camouflage6 players
+bossbar set hs:camouflage7 players
+bossbar set hs:camouflage8 players
+bossbar set hs:camouflage9 players
 
-bossbar set hs_lobby name {"text": "- more players needed!"}
-bossbar set hs_lobby color blue
-bossbar set hs_lobby style notched_10
-bossbar set hs_lobby max 10
+bossbar set hs:lobby name {"text": "- more players needed!"}
+bossbar set hs:lobby color blue
+bossbar set hs:lobby style notched_10
+bossbar set hs:lobby max 10
 
-bossbar set hs_time name {"text": "Hide and Seek", "bold": true}
-bossbar set hs_time color blue
-bossbar set hs_time players
+bossbar set hs:game_length name {"text": "Hide and Seek", "bold": true}
+bossbar set hs:game_length color blue
+bossbar set hs:game_length players

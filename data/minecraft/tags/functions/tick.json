@@ -1,5 +1,6 @@
 {
     "values": [
-        "ziggy:system/tick"
+        "system:tick",
+        "hideandseek:lobby_loop"
     ]
 }
