@@ -16,6 +16,10 @@ execute if score game_length hs_timers matches 0 unless score endtimer hs_timers
 scoreboard players add hider_warning hs_timers 1
 execute if score hider_warning hs_timers matches 45 run scoreboard players set hider_warning hs_timers 0
 
+# Seeker block-peek timer
+#scoreboard players add seeker_block hs_timers 1
+#execute if score seeker_block hs_timers matches 
+
 # Game length timer
 execute unless score game_length hs_timers matches 0 run scoreboard players remove game_length hs_timers 1
 

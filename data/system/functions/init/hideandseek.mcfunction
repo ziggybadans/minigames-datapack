@@ -23,6 +23,7 @@ team modify seekers nametagVisibility always
 #endregion
 
 #define entity hider_warning Visible warning when a seeker is within 15 blocks
+#define entity seeker_block Timer for the block peeking in hotbar
 scoreboard objectives add sneaking_timer dummy
 scoreboard players set #base sneaking_timer 0
 
