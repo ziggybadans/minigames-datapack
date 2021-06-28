@@ -1,7 +1,7 @@
 scoreboard players set @a hs_block -1
 
 scoreboard players set lobby hs_timers 600
-scoreboard players set lobby_cooldown hs_timers 0
+scoreboard players reset * lobby_cooldown
 scoreboard players set endtimer hs_timers 300
 
 scoreboard players set hider_warning hs_timers 0

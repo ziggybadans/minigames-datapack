@@ -1,5 +1,5 @@
 # Sets player state to 2 = playing
-scoreboard players set @s play_hideandseek 2
+scoreboard players set @s play_hideandseek 3
 # Adds permanent tag
 tag @s add hideandseek
 # Adds temporary team for lobby management

@@ -1,8 +1,9 @@
 #define objective hs_block Tracks the block a hider has selected
-scoreboard objectives add hs_block dummy
+scoreboard objectives add hs_block trigger
 
 #define entity lobby Lobby countdown when player count is met
-#define entity lobby_cooldown
+#define objective lobby_cooldown
+scoreboard objectives add lobby_cooldown dummy
 #define entity endtimer Cooldown after game ends
 
 #region Teams
@@ -30,7 +31,7 @@ scoreboard players set #base sneaking_timer 0
 #define entity seeker_timer Locks seeker in place until end of timer
 scoreboard objectives add seeker_timer dummy
 #define entity success Checks if there were any players in the seeker queue
-scoreboard objectives add seeker_queue dummy
+scoreboard objectives add seeker_queue trigger
 
 scoreboard objectives add camouflaged dummy
 #define objective camo_cooldown Period where hider is locked in place to prevent accidental movement

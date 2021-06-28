@@ -2,40 +2,40 @@
 execute if score @s hs_block matches 0 unless score @s camouflaged matches 1 run item replace entity @s armor.head with soul_sand
 
 item replace entity @s weapon.offhand with air
-item replace entity @s hotbar.1 with air 
-item replace entity @s hotbar.2 with air 
-item replace entity @s hotbar.3 with air 
-item replace entity @s hotbar.4 with air 
-item replace entity @s hotbar.5 with air 
-item replace entity @s hotbar.6 with air 
-item replace entity @s hotbar.7 with air 
-item replace entity @s hotbar.8 with air 
-item replace entity @s inventory.0 with air 
-item replace entity @s inventory.1 with air 
-item replace entity @s inventory.2 with air 
-item replace entity @s inventory.3 with air 
-item replace entity @s inventory.4 with air 
-item replace entity @s inventory.5 with air 
-item replace entity @s inventory.6 with air 
-item replace entity @s inventory.7 with air 
-item replace entity @s inventory.8 with air 
-item replace entity @s inventory.9 with air 
-item replace entity @s inventory.10 with air 
-item replace entity @s inventory.11 with air 
-item replace entity @s inventory.12 with air 
-item replace entity @s inventory.13 with air 
-item replace entity @s inventory.14 with air 
-item replace entity @s inventory.15 with air 
-item replace entity @s inventory.16 with air 
-item replace entity @s inventory.17 with air 
-item replace entity @s inventory.18 with air 
-item replace entity @s inventory.19 with air 
-item replace entity @s inventory.20 with air 
-item replace entity @s inventory.21 with air 
-item replace entity @s inventory.22 with air 
-item replace entity @s inventory.23 with air 
-item replace entity @s inventory.24 with air 
-item replace entity @s inventory.25 with air 
+item replace entity @s hotbar.1 with air
+item replace entity @s hotbar.2 with air
+item replace entity @s hotbar.3 with air
+item replace entity @s hotbar.4 with air
+item replace entity @s hotbar.5 with air
+item replace entity @s hotbar.6 with air
+item replace entity @s hotbar.7 with air
+item replace entity @s hotbar.8 with air
+item replace entity @s inventory.0 with air
+item replace entity @s inventory.1 with air
+item replace entity @s inventory.2 with air
+item replace entity @s inventory.3 with air
+item replace entity @s inventory.4 with air
+item replace entity @s inventory.5 with air
+item replace entity @s inventory.6 with air
+item replace entity @s inventory.7 with air
+item replace entity @s inventory.8 with air
+item replace entity @s inventory.9 with air
+item replace entity @s inventory.10 with air
+item replace entity @s inventory.11 with air
+item replace entity @s inventory.12 with air
+item replace entity @s inventory.13 with air
+item replace entity @s inventory.14 with air
+item replace entity @s inventory.15 with air
+item replace entity @s inventory.16 with air
+item replace entity @s inventory.17 with air
+item replace entity @s inventory.18 with air
+item replace entity @s inventory.19 with air
+item replace entity @s inventory.20 with air
+item replace entity @s inventory.21 with air
+item replace entity @s inventory.22 with air
+item replace entity @s inventory.23 with air
+item replace entity @s inventory.24 with air
+item replace entity @s inventory.25 with air
 item replace entity @s inventory.26 with air
 item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air
@@ -78,55 +78,55 @@ execute as @s[scores={playerID=22}] store result bossbar hs:camouflage22 value r
 execute as @s[scores={playerID=23}] store result bossbar hs:camouflage23 value run scoreboard players get @s sneaking_timer
 execute as @s[scores={playerID=24}] store result bossbar hs:camouflage24 value run scoreboard players get @s sneaking_timer
 
-execute if score @s camoflauged matches 1 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 4 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=4},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 5 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=5},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 6 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=6},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 7 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=7},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 8 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=8},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 9 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=9},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 10 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=10},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 11 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=11},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 12 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=12},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 13 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=13},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 14 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=14},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 15 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=15},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 16 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=16},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 17 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=17},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 18 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=18},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 19 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=19},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 20 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=20},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 21 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=21},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 22 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=22},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 23 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=23},limit=1] {Time:1}
-execute if score @s camoflauged matches 1 if score @s playerID matches 24 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=24},limit=1] {Time:1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 4 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=4},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 5 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=5},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 6 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=6},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 7 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=7},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 8 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=8},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 9 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=9},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 10 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=10},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 11 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=11},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 12 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=12},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 13 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=13},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 14 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=14},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 15 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=15},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 16 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=16},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 17 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=17},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 18 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=18},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 19 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=19},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 20 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=20},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 21 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=21},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 22 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=22},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 23 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=23},limit=1] {Time: 1}
+execute if score @s camoflauged matches 1 if score @s playerID matches 24 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=24},limit=1] {Time: 1}
 
-execute if score @s camoflauged matches 2 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 4 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=4},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 5 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=5},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 6 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=6},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 7 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=7},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 8 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=8},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 9 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=9},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 10 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=10},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 11 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=11},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 12 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=12},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 13 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=13},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 14 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=14},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 15 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=15},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 16 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=16},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 17 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=17},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 18 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=18},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 19 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=19},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 20 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=20},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 21 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=21},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 22 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=22},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 23 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=23},limit=1] {Time:1}
-execute if score @s camoflauged matches 2 if score @s playerID matches 24 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=24},limit=1] {Time:1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 1 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=1},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 2 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=2},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 3 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=3},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 4 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=4},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 5 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=5},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 6 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=6},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 7 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=7},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 8 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=8},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 9 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=9},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 10 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=10},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 11 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=11},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 12 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=12},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 13 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=13},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 14 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=14},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 15 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=15},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 16 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=16},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 17 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=17},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 18 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=18},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 19 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=19},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 20 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=20},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 21 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=21},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 22 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=22},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 23 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=23},limit=1] {Time: 1}
+execute if score @s camoflauged matches 2 if score @s playerID matches 24 run data merge entity @e[type=falling_block,tag=hideandseek,scores={playerID=24},limit=1] {Time: 1}
 
 execute unless score @s camo_cooldown matches 15 if score @s camouflaged matches 2 run scoreboard players add @s camo_cooldown 1
 
@@ -156,32 +156,32 @@ execute unless score @s camo_cooldown matches 15 if score @s camoflauged matches
 execute unless score @s camo_cooldown matches 15 if score @s camoflauged matches 2 if score @s playerID matches 24 run teleport @e[type=falling_block,tag=hideandseek,scores={playerID=24},limit=1]
 
 ## Uncamouflage
-execute if score @s camoflauged matches 2 if score @s playerID matches 1 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=1},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 2 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=2},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 3 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=3},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 4 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=4},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 5 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=5},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 6 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=6},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 7 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=7},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 8 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=8},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 9 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=9},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 10 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=10},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 11 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=11},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 12 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=12},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 13 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=13},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 14 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=14},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 15 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=15},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 16 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=16},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 17 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=17},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 18 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=18},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 19 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=19},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 20 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=20},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 21 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=21},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 22 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=22},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 23 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=23},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
-execute if score @s camoflauged matches 2 if score @s playerID matches 24 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=24},limit=1] {HurtTime:10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 1 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=1},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 2 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=2},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 3 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=3},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 4 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=4},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 5 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=5},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 6 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=6},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 7 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=7},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 8 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=8},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 9 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=9},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 10 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=10},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 11 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=11},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 12 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=12},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 13 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=13},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 14 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=14},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 15 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=15},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 16 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=16},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 17 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=17},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 18 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=18},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 19 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=19},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 20 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=20},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 21 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=21},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 22 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=22},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 23 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=23},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
+execute if score @s camoflauged matches 2 if score @s playerID matches 24 if data entity @e[type=shulker,tag=hideandseek,scores={playerID=24},limit=1] {HurtTime: 10s} run scoreboard players set @s camoflauged 3
 
-execute if score @s camouflaged matches 2 if data entity @s {HurtTime:10} run scoreboard players set @s camouflaged 3
+execute if score @s camouflaged matches 2 if data entity @s {HurtTime: 10} run scoreboard players set @s camouflaged 3
 
 execute if score @s camo_cooldown matches 15 if score @s camouflaged matches 2 if score @s moving matches 1 run scoreboard players set @s camouflaged 3
 

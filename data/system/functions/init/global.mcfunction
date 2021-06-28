@@ -10,9 +10,9 @@ team add hide_seek
 team add bedwars
 scoreboard objectives add justleft minecraft.custom:minecraft.leave_game
 
-scoreboard objectives add play_hideandseek dummy
+scoreboard objectives add play_hideandseek trigger
 scoreboard players reset * play_hideandseek
-scoreboard objectives add play_bedwars dummy
+scoreboard objectives add play_bedwars trigger
 scoreboard players reset * play_bedwars
 
 scoreboard objectives add timers dummy

@@ -8,7 +8,7 @@ execute as @a if score @s justleft matches 1 run function system:left
 
 ## Timers
 scoreboard players add lobby_cooldown hs_timers 1
-execute if score lobby_cooldown hs_timers matches 10 run scoreboard players set lobby_cooldown hs_timers 0
+execute if score lobby_cooldown hs_timers matches 11 run scoreboard players set lobby_cooldown hs_timers 0
 
 ## Position Tracking
 scoreboard players add position timers 1
@@ -30,10 +30,13 @@ execute as @a unless score @s pos2_Y = @s pos1_Y run scoreboard players set @s m
 execute as @a unless score @s pos2_Z = @s pos1_Z run scoreboard players set @s moving 1
 
 ## Game Tracking
-execute as @a if score @s play_hideandseek matches 0 run scoreboard players enable @s play_hideandseek
-execute as @a if score @s play_hideandseek matches 0 run scoreboard players enable @s play_bedwars
+execute as @a unless score @s play_hideandseek matches 1 unless score @s play_hideandseek matches 2 run scoreboard players enable @s play_hideandseek
+execute as @a unless score @s play_hideandseek matches 1 unless score @s play_hideandseek matches 2 run scoreboard players enable @s play_bedwars
 
-execute as @a if score @s play_hideandseek matches 1 run function hideandseek:lobby_wait
+execute as @a if score @s play_hideandseek matches 1 run tellraw @s {"text": "Joining...","italic": true}
+execute as @a if score @s play_hideandseek matches 1 run scoreboard players reset @s lobby_cooldown
+execute as @a unless score @s play_hideandseek matches 0 unless score @s play_hideandseek matches 3 run function hideandseek:lobby_wait
 
-execute as @a if score @s play_hideandseek matches 2 run scoreboard players enable @s hs_block
-execute as @a if score @s play_hideandseek matches 2 run scoreboard players enable @s seeker_queue
+
+execute as @a if score @s play_hideandseek matches 3 run scoreboard players enable @s hs_block
+execute as @a if score @s play_hideandseek matches 3 run scoreboard players enable @s seeker_queue

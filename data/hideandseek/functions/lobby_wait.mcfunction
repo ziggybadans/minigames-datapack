@@ -1,3 +1,4 @@
-tellraw @s {"text": "Joining...","italic": true}
+scoreboard players set @s play_hideandseek 2
 # A buffer for the lobby joining system
-execute if score lobby_cooldown hs_timers matches 10 run function hideandseek:lobby_join
+scoreboard players add @s lobby_cooldown 1
+execute if score @s lobby_cooldown matches 15 run function hideandseek:lobby_join
