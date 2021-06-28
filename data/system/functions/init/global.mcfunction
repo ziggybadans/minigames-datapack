@@ -6,6 +6,15 @@ scoreboard players set bedwars game 0
 #define entity hide_seek Hide and Seek game state
 scoreboard players set hide_seek game 0
 
+team add hide_seek
+team add bedwars
+scoreboard objectives add justleft minecraft.custom:minecraft.leave_game
+
+scoreboard objectives add play_hideandseek dummy
+scoreboard players reset * play_hideandseek
+scoreboard objectives add play_bedwars dummy
+scoreboard players reset * play_bedwars
+
 scoreboard objectives add timers dummy
 scoreboard players set position timers 0
 scoreboard objectives add hs_timers dummy

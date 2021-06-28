@@ -10,6 +10,11 @@ function system:quit/hideandseek
 scoreboard players reset * game
 scoreboard objectives remove game
 
+scoreboard players reset * play_hideandseek
+scoreboard objectives remove play_hideandseek
+scoreboard players reset * play_bedwars
+scoreboard objectives remove play_bedwars
+
 scoreboard players reset * timers
 scoreboard players reset * hs_timers
 scoreboard players reset * bw_timers

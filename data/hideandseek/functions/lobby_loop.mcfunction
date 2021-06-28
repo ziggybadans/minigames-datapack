@@ -1,4 +1,12 @@
+## Timers
+execute unless score currentID playerID matches 4 run scoreboard players set lobby hs_timers 400
+
+## playerID
+execute as @a[team=hideandseek] if score currentIDtrue playerID < currentID playerID run function system:tools/balance
+
 ## Titles
+execute store result score currentIDtrue playerID run team list hide_seek
+
 execute unless score lobby hs_timers matches -1 run bossbar set hs:lobby players @a[tag=hideandseek]
 execute store result bossbar hs:lobby value run scoreboard players get currentID playerID
 
@@ -33,3 +41,4 @@ execute if score currentID playerID matches 4 if score lobby hs_timers matches 2
 
 execute if score currentID playerID matches 4 unless score lobby hs_timers matches 0 unless score lobby hs_timers matches -1 run scoreboard players remove lobby hs_timers 1
 execute if score lobby hs_timers matches 0 run function hideandseek:start
+
