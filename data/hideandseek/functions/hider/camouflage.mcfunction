@@ -1,11 +1,12 @@
 scoreboard players set @s camouflaged 1
+scoreboard players set @s sneaking_timer 51
 
 gamemode spectator @s
 
 execute if score @s hs_block matches 0 align xyz positioned ~0.5 ~ ~0.5 run summon falling_block ~ ~ ~ {NoGravity: true, Tags: [hideandseek], BlockState: {Name: "minecraft:soul_sand"}, Time: 570, DropItem: false}
 scoreboard players operation @e[type=falling_block,distance=..1,tag=hideandseek] playerID = @s playerID
 
-execute align xyz positioned ~0.5 ~ ~0.5 run summon shulker ~ ~ ~ {ActiveEffects: [{Id: 14b, ShowParticles: false}], NoAI: true, Silent: true, NoGravity: true, Tags: [hideandseek], Team: hiders}
+execute align xyz positioned ~0.5 ~ ~0.5 run summon shulker ~ ~ ~ {ActiveEffects: [{Id: 14b, ShowParticles: false}], NoAI: true, Silent: true, NoGravity: true, Tags: [hideandseek]}
 scoreboard players operation @e[type=shulker,distance=..1,tag=hideandseek] playerID = @s playerID
 
 execute if score @s playerID matches 1 run bossbar set hs:camouflage1 color green

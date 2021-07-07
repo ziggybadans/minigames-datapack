@@ -48,5 +48,5 @@ execute if score currentID playerID matches 2 if score lobby hs_timers matches 2
 
 ## Functions
 # Once the lobby timer reaches 0, start the game
-execute if score lobby hs_timers matches 0 run function hideandseek:start
+execute if score lobby hs_timers matches 0 run function hideandseek:lobby/start
 

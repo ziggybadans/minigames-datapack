@@ -35,7 +35,7 @@ execute as @a unless score @s play_hideandseek matches 1 unless score @s play_hi
 
 execute as @a if score @s play_hideandseek matches 1 run tellraw @s {"text": "Joining...","italic": true}
 execute as @a if score @s play_hideandseek matches 1 run scoreboard players reset @s lobby_cooldown
-execute as @a unless score @s play_hideandseek matches 0 unless score @s play_hideandseek matches 3 run function hideandseek:lobby_wait
+execute as @a unless score @s play_hideandseek matches 0 unless score @s play_hideandseek matches 3 run function hideandseek:lobby/lobby_wait
 
 
 execute as @a if score @s play_hideandseek matches 3 run scoreboard players enable @s hs_block

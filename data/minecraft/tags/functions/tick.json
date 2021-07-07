@@ -1,6 +1,6 @@
 {
     "values": [
         "system:tick",
-        "hideandseek:lobby_loop"
+        "hideandseek:lobby/lobby_loop"
     ]
 }

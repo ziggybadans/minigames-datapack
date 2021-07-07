@@ -6,6 +6,6 @@ tag @s add hideandseek
 team join hide_seek @s
 
 # Block picking
-execute as @s run function hideandseek:block
+execute as @s run function hideandseek:lobby/block
 # Automatic playerID sorting
 execute as @s run function system:tools/sort_players
