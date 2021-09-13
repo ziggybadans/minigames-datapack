@@ -10,11 +10,6 @@ function system:quit/hideandseek
 scoreboard players reset * game
 scoreboard objectives remove game
 
-team empty hide_seek
-team remove hide_seek
-team empty bedwars
-team remove bedwars
-
 scoreboard players reset * justleft
 scoreboard objectives remove justleft
 

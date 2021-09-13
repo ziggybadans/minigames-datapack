@@ -1,5 +1,3 @@
-# Sets hide and seek game state to 0
-scoreboard players set hide_seek game 0
 # Clears inventory of all seekers
 clear @a[team=seekers]
 

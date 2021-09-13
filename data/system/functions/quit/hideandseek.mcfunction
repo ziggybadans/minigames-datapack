@@ -21,6 +21,9 @@ scoreboard objectives remove camouflaged
 scoreboard players reset * camo_cooldown
 scoreboard objectives remove camo_cooldown
 
+scoreboard objectives remove hider_count
+scoreboard objectives remove lobby_cooldown
+
 #region Bossbars
 bossbar remove hs:camouflage1
 bossbar remove hs:camouflage2

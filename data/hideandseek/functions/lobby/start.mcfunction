@@ -1,8 +1,10 @@
 scoreboard players set lobby hs_timers -1
 
-execute store success score success seeker_queue run team join seekers @r[scores={seeker_queue=1},tag=hideandseek]
-execute if score success seeker_queue matches 0 run team join seekers @r[tag=hideandseek]
+#execute store success score success seeker_queue run team join seekers @r[scores={seeker_queue=1},tag=hideandseek]
+#execute if score success seeker_queue matches 0 run team join seekers @r[tag=hideandseek]
+team join seekers The_Spikey_Man
 team join hiders @a[team=!seekers,tag=hideandseek]
+execute store result score hider_count play_hideandseek run team list hiders
 
 execute as @a[team=hiders,tag=hideandseek,scores={hs_block=-1}] run function system:tools/random
 execute as @a[team=hiders,tag=hideandseek,scores={hs_block=-1}] run scoreboard players operation @s hs_block = @s random

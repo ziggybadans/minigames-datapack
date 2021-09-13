@@ -1,4 +1,4 @@
-# Sets player state to 2 = playing
+# Sets player state to 3 = playing
 scoreboard players set @s play_hideandseek 3
 # Adds permanent tag
 tag @s add hideandseek

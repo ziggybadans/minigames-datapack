@@ -189,4 +189,5 @@ execute if score @s camo_cooldown matches 15 if score @s camouflaged matches 2 i
 execute if score @s camouflaged matches 3 run function hideandseek:hider/uncamouflage
 
 #> Death
-execute if score @s dead matches 1 run function hideandseek:hider/dead
+execute unless score hider_count play_hideandseek matches 1 if score @s dead matches 1 run function hideandseek:hider/dead
+execute if score hider_count play_hideandseek matches 1 if score @s dead matches 1 run function hideandseek:hider/dead_last

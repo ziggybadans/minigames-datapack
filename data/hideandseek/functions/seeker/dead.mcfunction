@@ -1,5 +1,5 @@
-title @s subtitle {"text":"You will respawn in 10 seconds..."}
-title @s title {"text":"How the hell did that happen?","color":"dark_red"}
+title @s subtitle {"text":"How the hell did that happen?"}
+title @s title {"text":"You will respawn in 10 seconds...","color":"dark_red"}
 
 clear @s
 

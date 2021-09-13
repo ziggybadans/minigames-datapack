@@ -1,7 +1,7 @@
 execute store result score hider_count play_hideandseek run team list hiders
 
-title @s subtitle {"text":"You will respawn in 10 seconds..."}
-title @s title {"text":"You were killed!","color":"dark_red"}
+title @s subtitle {"text":"Last man standing, but the seekers won anyway."}
+title @s title {"text":"You died.","color":"dark_red"}
 
 team join seekers
 
@@ -36,3 +36,5 @@ execute if score @s playerID matches 21 run bossbar set hs:camouflage21 players
 execute if score @s playerID matches 22 run bossbar set hs:camouflage22 players
 execute if score @s playerID matches 23 run bossbar set hs:camouflage23 players
 execute if score @s playerID matches 24 run bossbar set hs:camouflage24 players
+
+scoreboard players set game_length hs_timers 0

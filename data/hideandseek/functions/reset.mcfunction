@@ -1,4 +1,8 @@
-scoreboard players set @a hs_block -1
+scoreboard players reset @a[tag=hideandseek] hs_block
+scoreboard players reset @a[tag=hideandseek] play_hideandseek
+
+team empty hiders
+team empty seekers
 
 scoreboard players set lobby hs_timers 600
 scoreboard players reset * lobby_cooldown
@@ -7,7 +11,14 @@ scoreboard players set endtimer hs_timers 300
 scoreboard players set hider_warning hs_timers 0
 scoreboard players set seeker_block hs_timers 0
 
+scoreboard players reset * seeker_queue
 scoreboard players set success seeker_queue 0
+
+scoreboard players reset * seeker_timer
+scoreboard players reset * sneaking_timer
+
+scoreboard players reset hider_count play_hideandseek
+scoreboard players reset @a playerID
 
 bossbar set hs:camouflage1 players
 bossbar set hs:camouflage2 players
@@ -42,3 +53,18 @@ bossbar set hs:lobby max 10
 bossbar set hs:game_length name {"text": "Hide and Seek", "bold": true}
 bossbar set hs:game_length color blue
 bossbar set hs:game_length players
+
+scoreboard players set hide_seek game 0
+scoreboard players set hider_warning hs_timers 0
+
+scoreboard players set @a camouflaged 0
+
+gamemode survival @a[tag=hideandseek]
+teleport @a[tag=hideandseek] 8 4 8
+
+#team empty hide_seek
+tag @a remove hideandseek
+scoreboard players set currentID playerID 0
+scoreboard players set nextID playerID 1
+
+scoreboard players set game_length hs_timers 24000
