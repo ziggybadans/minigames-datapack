@@ -2,7 +2,7 @@
 execute unless score @s seeker_timer matches 0 run scoreboard players remove @s seeker_timer 1
 
 ## Loops
-execute unless score @s seeker_timer matches 0 run teleport ~ ~ ~
+execute unless score @s seeker_timer matches 0 run teleport 8 4 8
 
 ## Inventory Auto-clearing
 execute if score @s seeker_timer matches 0 run item replace entity @s hotbar.0 with netherite_sword{display: {Name: '[{"text":"Block Killer","italic":false,"color":"dark_red","bold":true}]'}, Enchantments: [{id: "minecraft:sharpness", lvl: 2}]} 1

@@ -2,7 +2,7 @@ scoreboard players set lobby hs_timers -1
 
 #execute store success score success seeker_queue run team join seekers @r[scores={seeker_queue=1},tag=hideandseek]
 #execute if score success seeker_queue matches 0 run team join seekers @r[tag=hideandseek]
-team join seekers The_Spikey_Man
+team join seekers theinkysquids
 team join hiders @a[team=!seekers,tag=hideandseek]
 execute store result score hider_count play_hideandseek run team list hiders
 
