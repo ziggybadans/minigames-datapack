@@ -9,6 +9,7 @@ function system:quit/hideandseek
 
 scoreboard players reset * game
 scoreboard objectives remove game
+team remove hide_seek
 
 scoreboard players reset * justleft
 scoreboard objectives remove justleft

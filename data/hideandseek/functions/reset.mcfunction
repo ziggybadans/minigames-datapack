@@ -61,8 +61,8 @@ scoreboard players set @a camouflaged 0
 
 gamemode survival @a[tag=hideandseek]
 teleport @a[tag=hideandseek] 8 4 8
+clear @a
 
-#team empty hide_seek
 tag @a remove hideandseek
 scoreboard players set currentID playerID 0
 scoreboard players set nextID playerID 1
