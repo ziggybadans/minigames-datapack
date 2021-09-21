@@ -4,13 +4,13 @@ execute unless score currentID playerID >= #base playerID run scoreboard players
 # Once the player count is met, start the lobby timer
 execute if score currentID playerID >= #base playerID unless score lobby hs_timers matches 0 unless score lobby hs_timers matches -1 run scoreboard players remove lobby hs_timers 1
 
-## playerID
-# Balances playerIDs if one person leaves
-execute as @a[team=hideandseek] if score currentIDtrue playerID < currentID playerID run function system:tools/balance
-
 ## Titles
 # Gets the true player count from the temporary team count
-execute store result score currentIDtrue playerID run team list hide_seek
+execute store result score currentIDtrue playerID run execute positioned -8 3 24 if entity @a[distance=..32, team=hide_seek]
+
+## playerID
+# Balances playerIDs if one person leaves
+execute as @a[team=hide_seek] if score currentIDtrue playerID < currentID playerID run function system:tools/balance
 
 # Show the lobby bossbar while the lobby is active
 execute unless score lobby hs_timers matches -1 run bossbar set hs:lobby players @a[tag=hideandseek]

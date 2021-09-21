@@ -9,6 +9,11 @@ execute as @a[team=seekers] at @s run function hideandseek:seeker/seeker
 # If the game_length timer hits its end, run the game ending function until the game fully ends
 execute if score game_length hs_timers matches 0 unless score endtimer hs_timers matches 0 run function hideandseek:end
 
+# If no players are left in a team, the game ends
+execute store result score countHiders playerID run execute positioned -8 3 24 if entity @a[dx=32, dy=4, dz=32, team=hiders]
+execute store result score countSeekers playerID run execute positioned -8 3 24 if entity @a[dx=32, dy=4, dz=32, team=seekers]
+execute if score countHiders playerID matches 0 unless score game_length hs_timers matches 0 run function hideandseek:end
+execute if score countSeekers playerID matches 0 unless score game_length hs_timers matches 0 run function hideandseek:end
 
 ## Timers
 # Hider warning timer

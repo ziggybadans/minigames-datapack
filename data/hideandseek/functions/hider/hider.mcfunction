@@ -1,5 +1,9 @@
 ## Inventory Auto-clearing
 execute if score @s hs_block matches 0 if score @s camouflaged matches 0 run item replace entity @s armor.head with soul_sand
+execute if score @s hs_block matches 1 if score @s camouflaged matches 0 run item replace entity @s armor.head with redstone_block
+execute if score @s hs_block matches 2 if score @s camouflaged matches 0 run item replace entity @s armor.head with beacon
+execute if score @s hs_block matches 3 if score @s camouflaged matches 0 run item replace entity @s armor.head with bookshelf
+execute if score @s hs_block matches 4 if score @s camouflaged matches 0 run item replace entity @s armor.head with chiseled_stone_bricks
 
 item replace entity @s weapon.offhand with air
 item replace entity @s hotbar.1 with air
