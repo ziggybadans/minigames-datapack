@@ -64,6 +64,7 @@ teleport @a[tag=hideandseek] 8 4 8
 clear @a
 
 tag @a remove hideandseek
+scoreboard players reset @a[tag=hideandseek] playerID
 scoreboard players set currentID playerID 0
 scoreboard players set nextID playerID 1
 

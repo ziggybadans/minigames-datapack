@@ -2,7 +2,7 @@
 execute if score hide_seek game matches 1 run function hideandseek:game_loop
 
 ## playerID
-execute as @e unless score @s playerID >= #base playerID run scoreboard players operation @s playerID = #base playerID
+#execute as @e unless score @s playerID >= #base playerID run scoreboard players operation @s playerID = #base playerID
 
 execute as @a if score @s justleft matches 1 run function system:left
 

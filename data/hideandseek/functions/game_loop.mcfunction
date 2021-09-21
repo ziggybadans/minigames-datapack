@@ -9,6 +9,7 @@ execute as @a[team=seekers] at @s run function hideandseek:seeker/seeker
 # If the game_length timer hits its end, run the game ending function until the game fully ends
 execute if score game_length hs_timers matches 0 unless score endtimer hs_timers matches 0 run function hideandseek:end
 
+
 ## Timers
 # Hider warning timer
 scoreboard players add hider_warning hs_timers 1
