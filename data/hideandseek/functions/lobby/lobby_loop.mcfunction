@@ -6,7 +6,7 @@ execute if score currentID playerID >= #base playerID unless score lobby hs_time
 
 ## Titles
 # Gets the true player count from the temporary team count
-execute store result score currentIDtrue playerID run execute positioned -8 3 24 if entity @a[distance=..32, team=hide_seek]
+execute in minecraft:hs-seacliff store result score currentIDtrue playerID run execute positioned 0 52 0 if entity @a[distance=..16, team=hide_seek]
 
 ## playerID
 # Balances playerIDs if one person leaves
@@ -51,5 +51,5 @@ execute if score currentID playerID >= #base playerID if score lobby hs_timers m
 
 ## Functions
 # Once the lobby timer reaches 0, start the game
-execute if score lobby hs_timers matches 0 run function hideandseek:lobby/start
+execute in minecraft:hs-seacliff if score lobby hs_timers matches 0 run function hideandseek:lobby/start
 

@@ -37,7 +37,8 @@ scoreboard objectives add camouflaged dummy
 #define objective camo_cooldown Period where hider is locked in place to prevent accidental movement
 scoreboard objectives add camo_cooldown dummy
 
-scoreboard players set hs_block range 4
+scoreboard players set hs_block range 5
+scoreboard players set item_rotation hs_timers 0
 
 #region Bossbars
 # Camouflaged

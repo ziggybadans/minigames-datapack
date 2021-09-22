@@ -5,12 +5,12 @@ title @s title {"text":"You died.","color":"dark_red"}
 
 team join seekers
 
-gamemode survival @s
+gamemode adventure @s
 clear @s
 effect clear @s
 
 scoreboard players reset @s dead
-scoreboard players set @s seeker_timer 200
+#scoreboard players set @s seeker_timer 200
 
 execute if score @s playerID matches 1 run bossbar set hs:camouflage1 players
 execute if score @s playerID matches 2 run bossbar set hs:camouflage2 players

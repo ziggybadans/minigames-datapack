@@ -5,7 +5,8 @@ tag @s add hideandseek
 # Adds temporary team for lobby management
 team join hide_seek @s
 
-teleport @s 8 4 8
+teleport @s 0 52 0 0 0
+gamemode adventure @s
 
 # Block picking
 execute as @s run function hideandseek:lobby/block

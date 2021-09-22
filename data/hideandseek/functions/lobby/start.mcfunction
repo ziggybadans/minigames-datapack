@@ -1,8 +1,7 @@
 scoreboard players set lobby hs_timers -1
 
-#execute store success score success seeker_queue run team join seekers @r[scores={seeker_queue=1},tag=hideandseek]
-#execute if score success seeker_queue matches 0 run team join seekers @r[tag=hideandseek]
-team join seekers theinkysquids
+execute store success score success seeker_queue run team join seekers @r[scores={seeker_queue=1},tag=hideandseek]
+execute if score success seeker_queue matches 0 run team join seekers @r[tag=hideandseek]
 team join hiders @a[team=!seekers,tag=hideandseek]
 execute store result score hider_count play_hideandseek run team list hiders
 
@@ -38,7 +37,8 @@ bossbar set hs:lobby players
 
 scoreboard players set @a[team=seekers] seeker_timer 600
 
-gamemode survival @a
+gamemode adventure @a
+teleport @a[team=hiders] 11 52 0 270 0
 
 scoreboard players set hide_seek game 1
 scoreboard players set @a[team=hiders] camouflaged 0

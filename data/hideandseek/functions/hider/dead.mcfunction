@@ -5,7 +5,7 @@ title @s title {"text":"You were killed!","color":"dark_red"}
 
 team join seekers
 
-gamemode survival @s
+gamemode adventure @s
 clear @s
 effect clear @s
 

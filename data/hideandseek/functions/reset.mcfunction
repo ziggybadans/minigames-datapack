@@ -50,18 +50,15 @@ bossbar set hs:lobby color blue
 bossbar set hs:lobby style notched_10
 bossbar set hs:lobby max 10
 
-bossbar set hs:game_length name {"text": "Hide and Seek", "bold": true}
-bossbar set hs:game_length color blue
-bossbar set hs:game_length players
-
 scoreboard players set hide_seek game 0
 scoreboard players set hider_warning hs_timers 0
 
 scoreboard players set @a camouflaged 0
 
-gamemode survival @a[tag=hideandseek]
-teleport @a[tag=hideandseek] 8 4 8
+gamemode adventure @a[tag=hideandseek]
+teleport @a[tag=hideandseek] 0 52 0
 clear @a
+execute positioned 65 52 -65 run kill @e[distance=..132, type=item]
 
 tag @a remove hideandseek
 scoreboard players reset @a[tag=hideandseek] playerID
@@ -69,3 +66,7 @@ scoreboard players set currentID playerID 0
 scoreboard players set nextID playerID 1
 
 scoreboard players set game_length hs_timers 24000
+
+bossbar set hs:game_length name {"text": "Hide and Seek", "bold": true}
+bossbar set hs:game_length color blue
+bossbar set hs:game_length players

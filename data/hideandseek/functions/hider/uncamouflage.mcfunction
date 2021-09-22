@@ -1,4 +1,4 @@
-gamemode survival @s
+gamemode adventure @s
 
 execute as @s[scores={playerID=1}] run kill @e[type=shulker,tag=hideandseek,scores={playerID=1}]
 execute as @s[scores={playerID=2}] run kill @e[type=shulker,tag=hideandseek,scores={playerID=2}]

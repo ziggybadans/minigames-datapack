@@ -6,6 +6,7 @@ execute if score @s hs_block matches 3 if score @s camouflaged matches 0 run ite
 execute if score @s hs_block matches 4 if score @s camouflaged matches 0 run item replace entity @s armor.head with chiseled_stone_bricks
 
 item replace entity @s weapon.offhand with air
+item replace entity @s hotbar.0 with air
 item replace entity @s hotbar.1 with air
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air

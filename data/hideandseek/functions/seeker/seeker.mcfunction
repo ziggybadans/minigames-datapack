@@ -1,10 +1,11 @@
-execute if score @s seeker_timer matches 0 run gamemode survival @s
+execute if score @s seeker_timer matches 0 run gamemode adventure @s
 
 ## Timers
 execute unless score @s seeker_timer matches 0 run scoreboard players remove @s seeker_timer 1
 
 ## Loops
-execute unless score @s seeker_timer matches 0 run teleport 8 4 8
+#execute unless score @s seeker_timer matches 0 run teleport 8 4 8
+execute if score @s seeker_timer matches 1 run teleport @s 0 52 5 180 0
 
 ## Inventory Auto-clearing
 execute if score @s seeker_timer matches 0 run item replace entity @s hotbar.0 with netherite_sword{display: {Name: '[{"text":"Block Killer","italic":false,"color":"dark_red","bold":true}]'}, Enchantments: [{id: "minecraft:sharpness", lvl: 2}]} 1
@@ -17,7 +18,6 @@ item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
-item replace entity @s hotbar.8 with air
 item replace entity @s inventory.0 with air
 item replace entity @s inventory.1 with air
 item replace entity @s inventory.2 with air

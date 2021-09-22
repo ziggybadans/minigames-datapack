@@ -1,5 +1,5 @@
 ## Loops
-execute if score hide_seek game matches 1 run function hideandseek:game_loop
+execute in minecraft:hs-seacliff if score hide_seek game matches 1 run function hideandseek:game_loop
 
 ## playerID
 #execute as @e unless score @s playerID >= #base playerID run scoreboard players operation @s playerID = #base playerID
@@ -36,7 +36,7 @@ execute as @a unless score @s play_hideandseek matches 1 unless score @s play_hi
 
 execute as @a if score @s play_hideandseek matches 1 run tellraw @s {"text": "Joining...","italic": true}
 execute as @a if score @s play_hideandseek matches 1 run scoreboard players reset @s lobby_cooldown
-execute as @a unless score @s play_hideandseek matches 0 unless score @s play_hideandseek matches 3 run function hideandseek:lobby/lobby_wait
+execute in minecraft:hs-seacliff as @a unless score @s play_hideandseek matches 0 unless score @s play_hideandseek matches 3 run function hideandseek:lobby/lobby_wait
 
 execute as @a if score @s play_hideandseek matches 3 run scoreboard players enable @s hs_block
 execute as @a if score @s play_hideandseek matches 3 run scoreboard players enable @s seeker_queue
