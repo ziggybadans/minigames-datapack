@@ -7,7 +7,7 @@ execute store success score settings_exist setup run scoreboard objectives add s
 execute if score settings_exist setup matches 0 run function system:init/settings
 
 ## Global game tracking
-#define objective game Global game tracking | 0 = not active, 1 = in lobby, 2 = playing, 3 = ending
+#define objective game Global game tracking | 0 = not active, 1 = in lobby, 2 = starting, 3 = playing, 4 = ending
 scoreboard objectives add game dummy "Active Games"
 #define score_holder HS_GAMELOOP Global Hide&Seek game loop on/off
 scoreboard players set HS_GAMELOOP game 0

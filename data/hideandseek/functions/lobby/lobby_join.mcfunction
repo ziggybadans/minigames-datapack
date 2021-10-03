@@ -10,4 +10,9 @@ team join hide_seek
 execute as @a[tag=hs-seacliff] in hs-seacliff run teleport 1 1 1
 
 function hideandseek:lobby/block
-function system:tools/sort_players
+
+execute if entity @s[tag=hs-seacliff] run scoreboard players operation @s hs_playerID = nextID_hs-seacliff hs_playerID
+execute if entity @s[tag=hs-seacliff] run scoreboard players add cID_hs-seacliff hs_playerID 1
+execute if entity @s[tag=hs-seacliff] run scoreboard players add nextID_hs-seacliff hs_playerID 1
+
+#function system:tools/sort_players

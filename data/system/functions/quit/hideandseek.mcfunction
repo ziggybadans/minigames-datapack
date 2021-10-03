@@ -3,12 +3,12 @@ scoreboard players reset * hs_block
 scoreboard objectives remove hs_block
 
 #> playerID
-scoreboard players reset * pID-seacliff
-scoreboard objectives remove pID-seacliff
+scoreboard players reset * hs_playerID
+scoreboard objectives remove hs_playerID
 
 ## Timers
-scoreboard players reset * hs_t-seacliff
-scoreboard objectives remove hs_t-seacliff
+scoreboard players reset * hs_timers
+scoreboard objectives remove hs_timers
 scoreboard players reset * sneaking_timer
 scoreboard objectives remove sneaking_timer
 
@@ -21,8 +21,8 @@ tag @a remove hs-seacliff
 
 ## Seekers
 ### Seeker Queue
-scoreboard players reset * sq-seacliff
-scoreboard objectives remove sq-seacliff
+scoreboard players reset * seeker_queue
+scoreboard objectives remove seeker_queue
 ### Seeker Timer
 scoreboard players reset * seeker_timer
 scoreboard objectives remove seeker_timer

@@ -2,7 +2,7 @@
 # Fix this later
 execute if score hs-seacliff game matches 1 run scoreboard players set HS_LOBBYLOOP game 1
 
-execute if score hs-seacliff game matches 2 run scoreboard players set HS_GAMELOOP game 2
+execute if score hs-seacliff game matches 3 run scoreboard players set HS_GAMELOOP game 1
 
 execute if score hs-seacliff game matches 0 run scoreboard players set HS_GAMELOOP game 0
 execute if score hs-seacliff game matches 0 run scoreboard players set HS_LOBBYLOOP game 0
@@ -11,7 +11,7 @@ execute as @a[team=hide_seek] if score HS_LOBBYLOOP game matches 1 run function 
 execute as @a[team=hide_seek] if score HS_GAMELOOP game matches 1 run function hideandseek:game_loop
 
 ## playerID
-execute store result score currentIDtrue pID-seacliff run execute if entity @a[team=hide_seek, tag=hs-seacliff]
+execute store result score currentID_hs-seacliff hs_playerID run execute if entity @a[team=hide_seek, tag=hs-seacliff]
 
 ## Game Tracking
 # Enables joining a hide and seek game for all players without a tag (in the lobby)

@@ -3,21 +3,21 @@ scoreboard players set @s hs-seacliff 0
 
 ## Lobby
 scoreboard players reset @s lobby_waiting
-scoreboard players operation game_countdown hs_t-seacliff = game_countdown settings
+scoreboard players operation gc-seacliff hs_timers = gc-seacliff settings
 
 ## Start
-scoreboard players reset #q_has_players sq-seacliff
+scoreboard players reset #q_has_players seeker_queue
 scoreboard players reset @s seeker_timer
 scoreboard players reset @s camouflaged
 
 ## Game
 scoreboard players reset @s hs_block
-scoreboard players reset count_hiders pID-seacliff
-scoreboard players reset count_seekers pID-seacliff
-scoreboard players set game_length hs_t-seacliff 24000
-scoreboard players set end_cooldown hs_t-seacliff 300
-scoreboard players set hider_warning hs_t-seacliff 0
-scoreboard players set item_rotation hs_t-seacliff 0
+scoreboard players reset hc-seacliff hs_playerID
+scoreboard players reset sc-seacliff hs_playerID
+scoreboard players set gl-seacliff hs_timers 24000
+scoreboard players set ec-seacliff hs_timers 300
+scoreboard players set hider_warning hs_timers 0
+scoreboard players set ir-seacliff hs_timers 0
 scoreboard players set ir-seacliff hs_block 0
 scoreboard players reset @s dead
 
@@ -26,10 +26,10 @@ scoreboard players reset @s sneaking_timer
 scoreboard players reset @s camo_cooldown
 
 ## playerID
-scoreboard players reset @s pID-seacliff
-scoreboard players set currentID pID-seacliff 0
-scoreboard players set currentIDtrue pID-seacliff 0
-scoreboard players set nextID pID-seacliff 1
+scoreboard players reset @s hs_playerID
+scoreboard players set currentID hs_playerID 0
+scoreboard players set currentIDtrue hs_playerID 0
+scoreboard players set nextID hs_playerID 1
 
 ## Bossbars
 bossbar set hs-seacliff:lobby value 0
@@ -138,7 +138,7 @@ bossbar set hs-seacliff:camouflage24 color red
 bossbar set hs-seacliff:camouflage24 name {"text": "Hide and Seek", "bold": true}
 
 ## Global
-scoreboard players reset @e[tag=hide_seek, tag=hs-seacliff, type=!player] pID-seacliff
+scoreboard players reset @e[tag=hide_seek, tag=hs-seacliff, type=!player] hs_playerID
 kill @e[tag=hide_seek, tag=hs-seacliff, type=!player]
 clear @s
 effect clear @s
