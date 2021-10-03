@@ -1,0 +1,1 @@
+tellraw @s ["","\n","\n",{"text":"What map would you like to join?","bold":true,"underlined":true,"color":"#3A88FE"},"\n","\n",{"text":"Seacliff","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger hs_seacliff"},"hoverEvent":{"action":"show_text","contents":["\\u25ba Jungle, stone plaza, beacons..."]}},"\n","\n"]

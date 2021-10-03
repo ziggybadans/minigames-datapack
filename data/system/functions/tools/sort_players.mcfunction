@@ -1,3 +1,3 @@
-scoreboard players operation @s playerID = nextID playerID
-scoreboard players operation currentID playerID = nextID playerID
-scoreboard players add nextID playerID 1
+scoreboard players operation @s pID-seacliff = nextID pID-seacliff
+scoreboard players operation currentID pID-seacliff = nextID pID-seacliff
+scoreboard players add nextID pID-seacliff 1

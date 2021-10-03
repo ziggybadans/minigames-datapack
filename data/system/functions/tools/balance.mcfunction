@@ -1,4 +1,4 @@
-execute if score @s playerID > currentIDtrue playerID run scoreboard players remove @s playerID 1
+execute if score @s pID-seacliff > currentIDtrue pID-seacliff run scoreboard players remove @s pID-seacliff 1
 
-scoreboard players remove currentID playerID 1
-scoreboard players remove nextID playerID 1
+scoreboard players remove currentID pID-seacliff 1
+scoreboard players remove nextID pID-seacliff 1

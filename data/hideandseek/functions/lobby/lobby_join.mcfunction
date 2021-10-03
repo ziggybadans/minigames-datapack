@@ -1,14 +1,13 @@
-# Sets player state to 3 = playing
-scoreboard players set @s play_hideandseek 3
-# Adds permanent tag
-tag @s add hideandseek
-# Adds temporary team for lobby management
-team join hide_seek @s
-
-teleport @s 0 52 0 0 0
 gamemode adventure @s
 
-# Block picking
-execute as @s run function hideandseek:lobby/block
-# Automatic playerID sorting
-execute as @s run function system:tools/sort_players
+scoreboard players set @s play_hideandseek 4
+# Add tag for map management
+execute as @a[scores={hs-seacliff=1}] run tag @s add hs-seacliff
+# Add team for lobby management
+team join hide_seek
+
+# Teleport to map
+execute as @a[tag=hs-seacliff] in hs-seacliff run teleport 1 1 1
+
+function hideandseek:lobby/block
+function system:tools/sort_players

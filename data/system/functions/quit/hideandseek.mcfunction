@@ -1,42 +1,69 @@
-function hideandseek:reset
-
+## Blocks
 scoreboard players reset * hs_block
 scoreboard objectives remove hs_block
 
-team empty hiders
-team remove hiders
-team empty seekers
-team remove seekers
+#> playerID
+scoreboard players reset * pID-seacliff
+scoreboard objectives remove pID-seacliff
 
+## Timers
+scoreboard players reset * hs_t-seacliff
+scoreboard objectives remove hs_t-seacliff
 scoreboard players reset * sneaking_timer
 scoreboard objectives remove sneaking_timer
 
+## Teams
+team remove seekers
+team remove hiders
+
+## Tags
+tag @a remove hs-seacliff
+
+## Seekers
+### Seeker Queue
+scoreboard players reset * sq-seacliff
+scoreboard objectives remove sq-seacliff
+### Seeker Timer
 scoreboard players reset * seeker_timer
 scoreboard objectives remove seeker_timer
-scoreboard players reset * seeker_queue
-scoreboard objectives remove seeker_queue
-
+## Hiders
 scoreboard players reset * camouflaged
 scoreboard objectives remove camouflaged
 scoreboard players reset * camo_cooldown
 scoreboard objectives remove camo_cooldown
+### Blocks
+scoreboard players reset * hs_b_count
+scoreboard objectives remove hs_b_count
 
-scoreboard objectives remove hider_count
-scoreboard objectives remove lobby_cooldown
+## Maps
+scoreboard players reset * hs-seacliff
+scoreboard objectives remove hs-seacliff
 
-#region Bossbars
-bossbar remove hs:camouflage1
-bossbar remove hs:camouflage2
-bossbar remove hs:camouflage3
-bossbar remove hs:camouflage4
-bossbar remove hs:camouflage5
-bossbar remove hs:camouflage6
-bossbar remove hs:camouflage7
-bossbar remove hs:camouflage8
-bossbar remove hs:camouflage9
+## Bossbars
+bossbar remove hs-seacliff:camouflage1
+bossbar remove hs-seacliff:camouflage2
+bossbar remove hs-seacliff:camouflage3
+bossbar remove hs-seacliff:camouflage4
+bossbar remove hs-seacliff:camouflage5
+bossbar remove hs-seacliff:camouflage6
+bossbar remove hs-seacliff:camouflage7
+bossbar remove hs-seacliff:camouflage8
+bossbar remove hs-seacliff:camouflage9
+bossbar remove hs-seacliff:camouflage10
+bossbar remove hs-seacliff:camouflage11
+bossbar remove hs-seacliff:camouflage12
+bossbar remove hs-seacliff:camouflage13
+bossbar remove hs-seacliff:camouflage14
+bossbar remove hs-seacliff:camouflage15
+bossbar remove hs-seacliff:camouflage16
+bossbar remove hs-seacliff:camouflage17
+bossbar remove hs-seacliff:camouflage18
+bossbar remove hs-seacliff:camouflage19
+bossbar remove hs-seacliff:camouflage20
+bossbar remove hs-seacliff:camouflage21
+bossbar remove hs-seacliff:camouflage22
+bossbar remove hs-seacliff:camouflage23
+bossbar remove hs-seacliff:camouflage24
 
-bossbar remove hs:lobby
-bossbar remove hs:game_length
-#endregion
-
-tag @a remove hideandseek
+bossbar remove hs-seacliff:lobby
+bossbar remove hs-seacliff:game_length

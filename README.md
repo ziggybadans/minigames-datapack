@@ -13,3 +13,8 @@ Glass is a minigames datapack, currently featuring **one** minigame. It is fully
 ## Minigames
 * Bedwars
 * Hide and Seek
+
+
+
+## TO-DO
+- Add an easy arena system using ENTITIES!!!!

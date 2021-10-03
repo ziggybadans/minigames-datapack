@@ -1,3 +1,4 @@
-execute if score currentID playerID matches 0 run bossbar set hs:lobby name {"text": "- more players needed"}
-execute if score currentID playerID matches 1 run bossbar set hs:lobby name {"text": "1 more player needed"}
-bossbar set hs:lobby color blue
+execute if score currentID pID-seacliff matches 0 run bossbar set hs-seacliff:lobby name {"text": "2 more players needed!"}
+execute if score currentID pID-seacliff matches 1 run bossbar set hs-seacliff:lobby name {"text": "1 more player needed!"}
+
+bossbar set hs-seacliff:lobby color blue

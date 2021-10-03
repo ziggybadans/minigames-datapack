@@ -1,54 +1,55 @@
 tellraw @s {"text": "Configuring pack...", "color": "red", "bold": true}
 
-scoreboard objectives add game dummy
-#define entity bedwars Bedwars game state
-scoreboard players set bedwars game 0
-#define entity hide_seek Hide and Seek game state
-scoreboard players set hide_seek game 0
+## Settings
+#define objective settings
+execute store success score settings_exist setup run scoreboard objectives add settings trigger "Settings"
+#define score_holder settings_exist
+execute if score settings_exist setup matches 0 run function system:init/settings
+
+## Global game tracking
+#define objective game Global game tracking | 0 = not active, 1 = in lobby, 2 = playing, 3 = ending
+scoreboard objectives add game dummy "Active Games"
+#define score_holder HS_GAMELOOP Global Hide&Seek game loop on/off
+scoreboard players set HS_GAMELOOP game 0
+#define score_holder HS_LOBBYLOOP Global Hide&Seek lobby loop on/off
+scoreboard players set HS_LOBBYLOOP game 0
+#define score_holder hs-seacliff Hide and Seek | Seacliff Map
+scoreboard players set hs-seacliff game 0
+#define team hide_seek Team for lobby and game management
 team add hide_seek
 
-scoreboard objectives add justleft minecraft.custom:minecraft.leave_game
-
-scoreboard objectives add play_hideandseek trigger
-scoreboard players reset * play_hideandseek
-scoreboard objectives add play_bedwars trigger
-scoreboard players reset * play_bedwars
-
-scoreboard objectives add timers dummy
-scoreboard players set position timers 0
-scoreboard objectives add hs_timers dummy
-#define entity game_length The length of a game
-scoreboard players set game_length hs_timers 24000
-scoreboard objectives add bw_timers dummy
-
-scoreboard objectives add playerID dummy
-#define entity nextID Next available ID to assign
-scoreboard players set nextID playerID 1
-#define entity currentID Current maximum ID
-scoreboard players set currentID playerID 0
-scoreboard players set #base playerID 2
-
-#region Position Tracking
+## Position Tracking
 scoreboard objectives add pos1_X dummy
 scoreboard objectives add pos1_Y dummy
 scoreboard objectives add pos1_Z dummy
 scoreboard objectives add pos2_X dummy
 scoreboard objectives add pos2_Y dummy
 scoreboard objectives add pos2_Z dummy
-
+#define objective moving Player value is 1 if they are moving
 scoreboard objectives add moving dummy
-#endregion
 
+## Death Tracking
 scoreboard objectives add health health "Health"
 scoreboard objectives add dead deathCount "Dead"
 
-scoreboard objectives add random dummy
-#define objective range Range for random function to utilise
-scoreboard objectives add range dummy
+## playerID
+#define objective justleft Checks if a player has left the game
+scoreboard objectives add justleft minecraft.custom:minecraft.leave_game "Recently left"
+#define score_holder nextID Next available ID to assign
+#define score_holder currentID Current maximum ID
+#define score_holder #base Minimum number of players for a game
+#define score_holder currentIDtrue Real number of players based on /team list
 
-tellraw @s {"text": "Enabling bedwars module...", "color": "red", "bold": false}
-function system:init/bedwars
-tellraw @s {"text": "Enabling hide and seek module...", "color": "red", "bold": false}
+## Triggers
+#define objective play_hideandseek Trigger objective for starting a hideandseek game | 0 = lobby, 1 = triggered, 2 = choosing map, 3 = waiting, 4 = joined, 5 = playing
+scoreboard objectives add play_hideandseek trigger
+
+## Lobby
+#define objective lobby_waiting Waiting period to join lobby to stop playerID errors
+scoreboard objectives add lobby_waiting dummy
+
+## Libaries
+function system:init/libraries
+
+## Modules
 function system:init/hideandseek
-
-scoreboard players set installed setup 1
